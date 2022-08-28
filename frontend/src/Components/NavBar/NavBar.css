@@ -1,0 +1,43 @@
+.navbar_root_div {
+  background-color: black;
+  margin-left: 15rem;
+  position: sticky;
+}
+.top_bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn_topBar_main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+.btn_topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_topBar a {
+  text-decoration: none;
+}
+.topBar_signIn,
+.topBar_register {
+  font-family: "Sf Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  display: inline-block;
+  color: #c8c7d8;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+.topBar_register:hover,
+.topBar_signIn:hover {
+  background-color: #4b6584c6;
+  padding: 0.5rem;
+  font-size: larger;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}

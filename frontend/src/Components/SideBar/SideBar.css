@@ -1,0 +1,123 @@
+.SideBar_root_div {
+  font-family: "Sf Pro";
+  display: inline-block;
+  background-color: black;
+  height: 100%;
+  width: 15rem;
+  color: #ffffff;
+}
+.SideBar_root_div > img {
+  display: inline-block;
+  margin-left: -1rem;
+  width: 7rem;
+  height: 7rem;
+}
+.op {
+  position: fixed;
+  z-index: 10;
+  background-color: black;
+  width: 15rem;
+}
+.navigationSection_SideBar_main {
+  margin-bottom: 1.5rem;
+}
+.LeagueName_section_SideBar_main {
+  margin-top: 25rem;
+  z-index: -1;
+  margin-bottom: 1.5rem;
+}
+.SportsName_section_SideBar_main {
+  margin-bottom: 1.5rem;
+}
+.navigation_section_item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.leagueName_section_item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.sportsName_section_item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navigation_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+.leagueName_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+.sportsName_item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+.navigation_item:hover {
+  background: rgba(44, 44, 44, 0.8);
+  backdrop-filter: blur(100px);
+  border-radius: 80px;
+  width: 14rem;
+}
+.leagueName_item:hover {
+  background: rgba(44, 44, 44, 0.8);
+  backdrop-filter: blur(100px);
+  border-radius: 80px;
+  width: 14rem;
+}
+.sportsName_item:hover {
+  background: rgba(44, 44, 44, 0.8);
+  backdrop-filter: blur(100px);
+  border-radius: 80px;
+  width: 14rem;
+}
+.navigation_item img {
+  width: 24px;
+  height: 24px;
+}
+.leagueName_item img {
+  width: 24px;
+  height: 24px;
+}
+.sportsName_item img {
+  width: 24px;
+  height: 24px;
+}
+.navigation_item span {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+}
+.leagueName_item span {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+}
+.sportsName_item span {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+}
+.sidebar_separater {
+  margin-top: -1rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
