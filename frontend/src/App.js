@@ -1,11 +1,15 @@
 import "./App.css";
 import SideBar from "./Components/SideBar/SideBar";
-import NavBar from "./Components/NavBar/NavBar";
+import Home from "./Pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      {/* <SideBar /> */}
-      <NavBar />
+      <div className="SideBar_APPJS_div">
+        <SideBar />
+      </div>
+      <div className="Home_APPJS_div">
+        <Home />
+      </div>
     </div>
   );
 }

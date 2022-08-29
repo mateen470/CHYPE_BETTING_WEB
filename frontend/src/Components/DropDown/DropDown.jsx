@@ -1,22 +1,18 @@
 import React from "react";
 import Select from "react-select";
+import Vector from "./assets/Vector.png";
+import "./opef.css";
 const customStyles = {
   control: () => ({
     // none of react-select's styles are passed to <Control />
   }),
   menu: () => ({
-    // none of react-select's styles are passed to <Control />
-    backgroundColor: "#212134",
     borderRadius: "2rem",
-    zIndex: "10000000",
-    position: "sticky",
+    marginTop: "19rem",
   }),
   option: (base, state) => ({
     ...base,
     backgroundColor: state.isSelected ? "#11131C" : "#212134",
-    borderRadius: "2rem",
-    position: "sticky",
-    zIndex: "10000000",
   }),
   indicatorSeparator: (provided, state) => null,
   dropdownIndicator: (provided, state) => null,
@@ -26,9 +22,9 @@ const techCompanies = [
   {
     label: (
       <img
-        height="35px"
+        height="40px"
         width="35px"
-        style={{ borderRadius: "50%" }}
+        style={{ borderRadius: "50%", marginTop: "1.7rem" }}
         src="https://i.postimg.cc/YS05SdwQ/Ethereum.png"
       />
     ),
@@ -37,7 +33,7 @@ const techCompanies = [
   {
     label: (
       <img
-        height="35px"
+        height="40px"
         width="35px"
         style={{ borderRadius: "50%" }}
         src="https://i.postimg.cc/9XYFrPgz/Bitcoin.png"
@@ -49,7 +45,7 @@ const techCompanies = [
   {
     label: (
       <img
-        height="35px"
+        height="40px"
         width="35px"
         style={{ borderRadius: "50%" }}
         src="https://i.postimg.cc/J4TrQrLL/Cent.png"
@@ -61,7 +57,7 @@ const techCompanies = [
   {
     label: (
       <img
-        height="35px"
+        height="40px"
         width="35px"
         style={{ borderRadius: "50%" }}
         src="https://i.postimg.cc/fyCwpZSY/Average-Price-1.png"
@@ -73,7 +69,7 @@ const techCompanies = [
   {
     label: (
       <img
-        height="35px"
+        height="40px"
         width="35px"
         style={{ borderRadius: "50%" }}
         src="https://i.postimg.cc/YS05SdwQ/Ethereum.png"
@@ -85,7 +81,7 @@ const techCompanies = [
   {
     label: (
       <img
-        height="35px"
+        height="40px"
         width="35px"
         style={{ borderRadius: "50%" }}
         src="https://i.postimg.cc/YS05SdwQ/Ethereum.png"
@@ -100,9 +96,7 @@ const Dropdown = () => {
   return (
     <Select
       styles={customStyles}
-      placeholder={
-        <img src="https://i.postimg.cc/YS05SdwQ/Ethereum.png" alt="#" />
-      }
+      placeholder={null}
       clearable={false}
       options={techCompanies}
     />

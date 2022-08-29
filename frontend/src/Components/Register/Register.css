@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000000;
 }
 .login__container {
   border-radius: 14px;
@@ -16,8 +15,9 @@
   margin-top: 5%;
   flex-direction: column;
   text-align: center;
-  background-color: #11131c;
-  padding: 60px;
+  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
+  border-radius: 30px;
+  /* padding: 60px; */
 }
 .login__textBox {
   padding: 8px;
@@ -53,4 +53,99 @@
   text-align: center;
   border: 1px solid #999;
   font-size: 20px;
+}
+.Regitser_root_div {
+  position: fixed;
+  z-index: 3;
+  padding-top: 0.2rem;
+  padding-left: 11rem;
+  color: aliceblue;
+}
+.Register_Main_container {
+  display: inline-block;
+  width: 28rem;
+  height: 35rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
+  border-radius: 30px;
+}
+.RegisterHeading_and_CrossButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.RegisterHeading_and_CrossButton h1 {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.RegisterHeading_and_CrossButton button {
+  background: none;
+  border: none;
+}
+.RegisterHeading_and_CrossButton button:hover {
+  cursor: pointer;
+}
+.RegisterHeading_and_CrossButton button img {
+  height: 1rem;
+  width: 1rem;
+}
+.inputTag_with_Label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.inputTag_with_Label label {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.inputTag_with_Label input {
+  background: none;
+  outline: none;
+  border: 1px solid #575757;
+  border-radius: 5rem;
+  padding: 0.3rem;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "SF pro";
+}
+.inputTag_with_Label input::placeholder {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #575757;
+}
+.terms_agreements_check_box {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.terms_agreements_check_box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-indent: 5px;
+  color: #ffffff;
 }

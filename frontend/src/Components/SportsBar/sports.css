@@ -1,0 +1,51 @@
+.sportsCarousel_main {
+  color: white;
+  font-size: 20px;
+  position: fixed;
+}
+.carousel {
+  display: inline-block;
+  cursor: grab;
+  overflow: hidden;
+}
+.inner-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item_NavLink {
+  text-decoration: none;
+}
+.itemSports {
+  background: linear-gradient(135deg, #212122 -26.43%, #121213 100%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10px;
+}
+.itemSports img {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: inline-block;
+  margin-top: 1.2rem;
+  margin-left: 1.2rem;
+  background: none;
+}
+.item_sportsName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF pro";
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 0.4rem;
+  text-transform: uppercase;
+  color: #616161;
+}

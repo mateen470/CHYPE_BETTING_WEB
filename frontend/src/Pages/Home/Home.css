@@ -1,0 +1,10 @@
+.NavBar_HomePage_root {
+  position: fixed;
+  z-index: 2;
+}
+.SportsBar_HomePage_root {
+  display: inline-block;
+  position: fixed;
+  z-index: 1;
+  margin-top: 5rem;
+}

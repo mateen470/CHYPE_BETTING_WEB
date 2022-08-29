@@ -4,9 +4,19 @@ import "./NavBar.css";
 import Login from "../SignIn/Login";
 import Register from "../Register/Register";
 import Btn from "../ConnectWallet/ConnectWallet";
+import SearchIcon from "./assets/search.png";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [searchBarData, setSearchBarData] = useState("");
+  const setSearchInput = (e) => {
+    const { name, value } = e.target;
+    searchBarData((previousValue) => {
+      return {
+        ...previousValue,
+        [name]: value,
+      };
+    });
+  };
   const togglePopup = () => {
     setIsOpen(!isOpen);
   };
@@ -21,6 +31,15 @@ const NavBar = () => {
       <div>{isOpen && <Login handleClose={togglePopup}></Login>}</div>
       <div>{isOpen2 && <Register handleClose={togglePopup2}></Register>}</div>
       <div className="top_bar">
+        <div className="searchBar_NavBar_root_div">
+          <input
+            defaultValue={searchBarData}
+            type="text"
+            onChange={setSearchInput}
+            placeholder="Search"
+          />
+          <img src={SearchIcon} alt="SEARCH BAR" />
+        </div>
         <div className="btn_topBar_main">
           <div className="btn_topBar">
             <NavLink to={"/"}>
@@ -33,7 +52,9 @@ const NavBar = () => {
                 Register
               </span>
             </NavLink>
-            <Btn className="connect_wallet_btn" />
+            <div className="connect_wallet_btn">
+              <Btn />
+            </div>
           </div>
         </div>
       </div>

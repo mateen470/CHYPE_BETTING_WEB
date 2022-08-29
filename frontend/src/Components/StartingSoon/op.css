@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  width: 14rem;
+  height: 2.3rem;
+  background: linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%);
+  box-shadow: 0px 4px 45px rgba(88, 74, 255, 0.2);
+  border-radius: 30px;
+}
+.left {
+  background: none;
+}
+.right {
+  background: linear-gradient(104.01deg, #1b80cb -33.89%, #002e8d 101.19%);
+  height: 2.3rem;
+  width: 4.5rem;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: "Sf Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 0.7rem;
+  padding-left: 0.5rem;
+}

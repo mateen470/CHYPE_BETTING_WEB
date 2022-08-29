@@ -8,7 +8,7 @@ import SportsSection from "./SideBarComponents/Sports";
 const SideBar = () => {
   return (
     <div className="SideBar_root_div">
-      <div className="op">
+      <div className="Navigation_section_and_logo">
         <img src={Logo} alt="LOGO" />
         <div className="navigationSection_SideBar_main">
           <NavigationSection />

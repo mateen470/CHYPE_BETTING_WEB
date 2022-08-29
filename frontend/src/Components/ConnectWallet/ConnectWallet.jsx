@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import "./ConnectWallet.css";
 import { useEffect, useState } from "react";
 import Dropdown from "../DropDown/DropDown";
 
@@ -42,33 +43,6 @@ export default function Btn() {
     &:hover::after {
       padding: 0.3rem;
     }
-  `;
-  const Btn1 = styled.div`
-    display: inline-block;
-    background: rgba(64, 64, 64, 0.36);
-    border: 1px solid rgba(216, 216, 216, 0.68);
-    border-radius: 4px;
-    color: white;
-    gap: 10px;
-    width: auto;
-    height: 48px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    line-height: 24px;
-    position: relative;
-  `;
-
-  const Rightdiv = styled.div`
-    width: auto;
-    float: right;
-    display: inline-block;
-  `;
-  const Leftdiv = styled.div`
-    display: inline-block;
-    min-width: 0%;
-    color: black;
-    float: left;
-    font-family: Poppins;
   `;
 
   const [currentAccount, setCurrentAccount] = useState(null);
@@ -118,43 +92,17 @@ export default function Btn() {
 
   const ConnectedButton = () => {
     return (
-      <Btn1>
-        <Leftdiv>
-          {/* <img src="https://i.postimg.cc/YS05SdwQ/Ethereum.png" /> */}
-          <div style={{ float: "left", color: "white" }}>
-            <p
-              style={{
-                marginTop: "0.7rem",
-                fontSize: "17px",
-                fontWeight: "600",
-              }}
-            >
-              0.011
-            </p>
+      <div className="Btn1">
+        <div className="Leftdiv">
+          <div className="cryptoValue_wallet">
+            <p>0.011</p>
           </div>
-          <div
-            style={{
-              marginTop: "0.15rem",
-              marginLeft: "2.2rem",
-              marginRight: "0.5rem",
-            }}
-          >
+          {/* <div className="dropdwon_navBar">
             <Dropdown />
-          </div>
-        </Leftdiv>
-        <Rightdiv>
-          <img
-            style={{
-              backgroundColor: "#6966FF",
-              marginTop: "0.3rem",
-              borderRadius: "5px",
-              padding: "0.2rem",
-            }}
-            src="https://i.postimg.cc/X7x1y9LL/Coin-Wallet.png"
-            alt="#"
-          />
-        </Rightdiv>
-      </Btn1>
+          </div> */}
+        </div>
+        <div className="Rightdiv">WALLET</div>
+      </div>
     );
   };
 
