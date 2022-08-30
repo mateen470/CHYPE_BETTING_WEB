@@ -1,55 +1,207 @@
-.login {
-  height: 100vh;
-  width: 100vw;
+.SignIn_root_conatiner {
+  backdrop-filter: blur(2px);
   position: fixed;
+  z-index: 3;
+  padding-left: 12rem;
+  padding-right: 25rem;
+  padding-bottom: 20rem;
+}
+.signIn_main_conatiner {
+  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
+  width: 30rem;
+  margin-top: 3rem;
+  height: 33rem;
+  border-radius: 30px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+}
+.SignInHeading_and_CrossButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.SignInHeading_and_CrossButton h1 {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.SignInHeading_and_CrossButton button {
+  background: none;
+  border: none;
+}
+.SignInHeading_and_CrossButton button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.SignInHeading_and_CrossButton button img {
+  height: 1rem;
+  width: 1rem;
+}
+.inputTag_with_Label_Login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.inputTag_with_Label_Login label {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.inputTag_with_Label_Login input {
+  background: none;
+  outline: none;
+  border: 1px solid #575757;
+  border-radius: 5rem;
+  padding: 0.3rem;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "SF pro";
+}
+.inputTag_with_Label_Login input::placeholder {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #575757;
+}
+.rememberMe {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: 0.3rem;
+  margin-left: 0.5rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.loginButton_LoginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: #4b5671;
+  border-radius: 32px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.loginButton_LoginPage button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.loginButton_LoginPage:hover {
+  scale: 0.97;
+  background: linear-gradient(90.45deg, #1cb1fd 0%, #356dfe 100%);
+  transition: 0.5s ease-in-out;
+}
+.login_google {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 10000000;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 11rem;
+  border: 1px solid #dde1e6;
+  filter: drop-shadow(4px 4px 24px rgba(35, 60, 142, 0.8));
+  border-radius: 60px;
 }
-.login__container {
-  border-radius: 14px;
-  display: flex;
-  width: 45%;
-  height: auto;
-  margin-top: 5%;
-  flex-direction: column;
-  text-align: center;
-  background-color: #11131c;
-  padding: 60px;
+.login_google:hover {
+  scale: 0.95;
 }
-.login__textBox {
-  padding: 8px;
-  font-size: 14px;
-  margin-bottom: 10px;
+.login_google img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
-.login__btn {
-  padding: 8px;
-  font-size: 15px;
-  margin-bottom: 10px;
+.login_google button {
+  background: none;
   border: none;
-  color: white;
-  background-color: #6966ff;
-}
-.login__google {
-  background-color: #75749c;
-}
-.login div {
-  margin-top: 7px;
-}
-
-.close-icon {
-  content: "x";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
   cursor: pointer;
-  position: fixed;
-  right: 350px;
-  top: calc(100vh - 85vh - 33px);
-  background: #ededed;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  line-height: 20px;
+}
+.google_facebook_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.Continue_with_text {
+  padding-top: 0.5rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
   text-align: center;
-  border: 1px solid #999;
-  font-size: 20px;
+  text-indent: 5px;
+  color: #6d7783;
+}
+.already_acc {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #b2b6bc;
+}
+.already_acc a {
+  color: #1cb1fd;
+  text-decoration: none;
+}
+.forgetPassword {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.forgetPassword a {
+  color: #1cb1fd;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
 }

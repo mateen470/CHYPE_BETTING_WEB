@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import Reg from "../../Components/Register/Reg"
 import NavBar from "../../Components/NavBar/NavBar";
 import SportsBar from "../../Components/SportsBar/SportsBar";
 const Home = () => {
@@ -12,7 +11,6 @@ const Home = () => {
       <div className="SportsBar_HomePage_root">
         <SportsBar />
       </div>
-      <Reg/>
     </div>
   );
 };

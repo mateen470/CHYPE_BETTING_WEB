@@ -30,6 +30,13 @@
   height: 4rem;
   border-radius: 10px;
 }
+.itemSports:hover {
+  background: #121213;
+  scale: 0.98;
+}
+.item_NavLink:hover {
+  scale: 0.98;
+}
 .itemSports img {
   height: 1.5rem;
   width: 1.5rem;

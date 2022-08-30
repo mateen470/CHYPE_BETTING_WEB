@@ -1,14 +1,16 @@
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Register.css";
 import {
   auth,
   registerWithEmailAndPassword,
   signInWithGoogle,
 } from "../FireBase/FireBase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import React, { useEffect, useState, useNavigate } from "react";
-import { Link } from "react-router-dom";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import "./Register.css";
-
+import cross from "./assets/Vector.png";
+import google from "./assets/google.png";
+import facebook from "./assets/facebook.png";
 const Register = (props) => {
   const validatePassword = () => {
     let isValid = true;
@@ -38,62 +40,92 @@ const Register = (props) => {
   };
 
   const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [date, setDate] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
   return (
-    <div className="login">
-      <div className="login__container">
-        <span className="close-icon" onClick={props.handleClose}>
-          x
-        </span>
-        <input
-          type="email"
-          className="login__textBox"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
-        />
-        <input type="name" className="login__textBox" placeholder="username" />
-        <input
-          type="password"
-          className="login__textBox"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />
-        <input
-          type="password"
-          className="login__textBox"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          placeholder="Password"
-        />
-        <div style={{ float: "left" }}>
-          <input
-            className="login__textBox"
-            type="date"
-            id="birthday"
-            name="birthday"
-          ></input>
+    <div className="Regitser_root_div">
+      <div className="Register_Main_container">
+        <div className="RegisterHeading_and_CrossButton">
+          <h1>Register</h1>
+          <button onClick={props.handleClose}>
+            <img src={cross} alt="CROSS" />
+          </button>
         </div>
-        <input
-          type="Referral Code"
-          className="login__textBox"
-          placeholder="Code (Optional)"
-        />
-        <button className="login__btn" onClick={register}>
-          Register
-        </button>
-        <button className="login__btn login__google" onClick={signInWithGoogle}>
-          Register with Google
-        </button>
-
-        <div style={{ color: "white" }}>
-          Have an account Already? <Link to="/">Sign in</Link> now.
+        <div className="inputTag_with_Label">
+          <label htmlFor="emailRegister">Email</label>
+          <input
+            type="email"
+            id="emailRegister"
+            placeholder="Enter Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="inputTag_with_Label">
+          <label htmlFor="nameRegister">Username</label>
+          <input
+            type="text"
+            id="nameRegister"
+            placeholder="Enter Username"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="inputTag_with_Label">
+          <label htmlFor="passwordRegister">Password</label>
+          <input
+            type="password"
+            id="passwordRegister"
+            placeholder="Enter Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div className="inputTag_with_Label">
+          <label htmlFor="date">Date Of Birth</label>
+          <input
+            type="date"
+            id="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+        </div>
+        <div className="inputTag_with_Label">
+          <label htmlFor="codeRegister">Code (Optional)</label>
+          <input type="text" id="codeRegister" placeholder="Enter Code" />
+        </div>
+        <div className="terms_agreements_check_box">
+          <input type="checkbox" />
+          <span>
+            By clicking the checkbox, you are indicating that you have read &
+            acknowlegde the Terms & Conditions
+          </span>
+        </div>
+        <div className="loginButton">
+          <button onClick={register}>Sign Up</button>
+        </div>
+        <div className="Continue_with_text">or continue with</div>
+        <div className="google_facebook_login">
+          <div className="login_google">
+            <button>
+              <img src={facebook} alt="FACEBOOK ICON" /> Facebook
+            </button>
+          </div>
+          <div className="login_google">
+            <button onClick={signInWithGoogle}>
+              <img src={google} alt="GOOGLE ICON" /> Google
+            </button>
+          </div>
+        </div>
+        <div className="already_acc">
+          Already have an account? <NavLink to="/">Sign In</NavLink>
         </div>
       </div>
     </div>
   );
 };
+
 export default Register;

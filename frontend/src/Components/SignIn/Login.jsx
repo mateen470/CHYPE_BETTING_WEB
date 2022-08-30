@@ -1,14 +1,16 @@
+import React, { useEffect, useState, useNavigate } from "react";
+import "./Login.css";
+import { NavLink } from "react-router-dom";
+import cross from "./assets/Vector.png";
+import google from "./assets/google.png";
+import facebook from "./assets/facebook.png";
 import {
   auth,
   logInWithEmailAndPassword,
   signInWithGoogle,
 } from "../FireBase/FireBase";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
-import React, { useEffect, useState, useNavigate } from "react";
-import Register from "../Register/Register";
 
-import "./Login.css";
 const Login = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,42 +24,65 @@ const Login = (props) => {
     if (user);
   }, [user, loading]);
   return (
-    <div className="login">
-      <div className="login__container">
-        <span className="close-icon" onClick={props.handleClose}>
-          x
-        </span>
-        <input
-          type="text"
-          className="login__textBox"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
-        />
-        <input
-          type="password"
-          className="login__textBox"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />
-        <button
-          className="login__btn"
-          onClick={() => logInWithEmailAndPassword(email, password)}
-        >
-          Login
-        </button>
-        <button className="login__btn login__google" onClick={signInWithGoogle}>
-          Login with Google
-        </button>
-        <div>
-          <Link to="/reset">Forgot Password</Link>
+    <div className="SignIn_root_conatiner">
+      <div className="signIn_main_conatiner">
+        <div className="SignInHeading_and_CrossButton">
+          <h1>Welcom Back to Chype!</h1>
+          <button onClick={props.handleClose}>
+            <img src={cross} alt="CROSS" />
+          </button>
         </div>
-        <div style={{ color: "white" }}>
-          Don't have an account? <Link to="/Register">Register</Link> now.
+        <div className="inputTag_with_Label_Login">
+          <label htmlFor="userNameLogIn">Username or Email</label>
+          <input
+            type="text"
+            id="userNameLogIn"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter Username or Email"
+          />
+        </div>
+        <div className="inputTag_with_Label_Login">
+          <label htmlFor="passwordSignin">Password</label>
+          <input
+            type="password"
+            id="passwordSignin"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter Password"
+          />
+        </div>
+        <div className="rememberMe">
+          <input type="checkbox" />
+          Remember me
+        </div>
+        <div className="loginButton_LoginPage">
+          <button onClick={() => logInWithEmailAndPassword(email, password)}>
+            Sign In
+          </button>
+        </div>
+        <div className="forgetPassword">
+          <NavLink to="/reset"> Forget Password?</NavLink>
+        </div>
+        <div className="Continue_with_text">or continue with</div>
+        <div className="google_facebook_login">
+          <div className="login_google">
+            <button>
+              <img src={facebook} alt="FACEBOOK ICON" /> Facebook
+            </button>
+          </div>
+          <div className="login_google">
+            <button onClick={signInWithGoogle}>
+              <img src={google} alt="GOOGLE ICON" /> Google
+            </button>
+          </div>
+        </div>
+        <div className="already_acc">
+          Don't have an account? <NavLink to="/Register">Register</NavLink>
         </div>
       </div>
     </div>
   );
 };
+
 export default Login;

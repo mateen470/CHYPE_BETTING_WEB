@@ -1,73 +1,18 @@
-.login {
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.login__container {
-  border-radius: 14px;
-  font-family: "Poppins";
-  display: flex;
-  width: 45%;
-  height: 80%;
-  margin-top: 5%;
-  flex-direction: column;
-  text-align: center;
-  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
-  border-radius: 30px;
-  /* padding: 60px; */
-}
-.login__textBox {
-  padding: 8px;
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-.login__btn {
-  padding: 8px;
-  font-size: 15px;
-  margin-bottom: 10px;
-  border: none;
-  color: white;
-  background-color: #6966ff;
-}
-.login__google {
-  background-color: #75749c;
-}
-.login div {
-  margin-top: 7px;
-}
-
-.close-icon {
-  content: "x";
-  cursor: pointer;
-  position: fixed;
-  right: 350px;
-  top: calc(100vh - 85vh - 33px);
-  background: #ededed;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  line-height: 20px;
-  text-align: center;
-  border: 1px solid #999;
-  font-size: 20px;
-}
 .Regitser_root_div {
   position: fixed;
+  backdrop-filter: blur(2px);
   z-index: 3;
-  padding-top: 0.2rem;
   padding-left: 11rem;
+  padding-right: 25rem;
+  padding-top: 0.2rem;
   color: aliceblue;
 }
 .Register_Main_container {
   display: inline-block;
-  width: 28rem;
-  height: 35rem;
+  width: 30rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  padding-top: 0.5rem;
+  padding-top: 0.3rem;
   background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
   border-radius: 30px;
 }
@@ -91,6 +36,7 @@
 }
 .RegisterHeading_and_CrossButton button:hover {
   cursor: pointer;
+  scale: 1.1;
 }
 .RegisterHeading_and_CrossButton button img {
   height: 1rem;
@@ -99,7 +45,7 @@
 .inputTag_with_Label {
   display: flex;
   flex-direction: column;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
 }
 .inputTag_with_Label label {
   font-family: "SF pro";
@@ -139,13 +85,109 @@
   margin-top: 1rem;
 }
 .terms_agreements_check_box span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: 0.3rem;
   font-family: "SF pro";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   text-indent: 5px;
   color: #ffffff;
+}
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background: #4b5671;
+  border-radius: 32px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.loginButton button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.loginButton:hover {
+  scale: 0.97;
+  background: linear-gradient(90.45deg, #1cb1fd 0%, #356dfe 100%);
+  transition: 0.5s ease-in-out;
+}
+.login_google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 11rem;
+  border: 1px solid #dde1e6;
+  filter: drop-shadow(4px 4px 24px rgba(35, 60, 142, 0.8));
+  border-radius: 60px;
+}
+.login_google:hover {
+  scale: 0.95;
+}
+.login_google img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.login_google button {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.google_facebook_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.Continue_with_text {
+  padding-top: 0.5rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #6d7783;
+}
+.already_acc {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #b2b6bc;
+}
+.already_acc a {
+  color: #1cb1fd;
+  text-decoration: none;
 }

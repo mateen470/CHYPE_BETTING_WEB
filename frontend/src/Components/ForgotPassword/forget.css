@@ -1,0 +1,109 @@
+.forgtePassword_root_container {
+  position: fixed;
+  backdrop-filter: blur(2px);
+  z-index: 3;
+  padding-left: 11rem;
+  padding-right: 25rem;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  color: aliceblue;
+}
+.forgetPassword_main {
+  display: inline-block;
+  width: 30rem;
+  height: 15rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.3rem;
+  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
+  border-radius: 30px;
+}
+.forgetPass_Heading_and_CrossButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.forgetPass_Heading_and_CrossButton h1 {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.forgetPass_Heading_and_CrossButton button {
+  background: none;
+  border: none;
+}
+.forgetPass_Heading_and_CrossButton button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.forgetPass_Heading_and_CrossButton button img {
+  height: 1rem;
+  width: 1rem;
+}
+.inputTag_with_Label_forgetPass {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.inputTag_with_Label_forgetPass label {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+  margin-left: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.inputTag_with_Label_forgetPass input {
+  background: none;
+  outline: none;
+  border: 1px solid #575757;
+  border-radius: 5rem;
+  padding: 0.3rem;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "SF pro";
+}
+.inputTag_with_Label_forgetPass input::placeholder {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #575757;
+}
+.submitBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  background: #4b5671;
+  border-radius: 32px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.submitBtn button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.submitBtn:hover {
+  scale: 0.97;
+  background: linear-gradient(90.45deg, #1cb1fd 0%, #356dfe 100%);
+  transition: 0.5s ease-in-out;
+}
