@@ -1,0 +1,66 @@
+.Carousel_rootDiv {
+  padding-top: 1rem;
+  padding-left: 7rem;
+  padding-right: 23rem;
+  height: 14rem;
+  width: 80rem;
+}
+
+.carousel_root_child {
+  border-radius: 45px;
+}
+.carousel_main_Div {
+  display: flex;
+}
+.carousel_textPortion_root_div {
+  display: inline-block;
+  padding: 1.5rem;
+}
+.carousel_textPortion_root_div h1 {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+.paragrpahs_of_textPortion {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 2rem;
+}
+.button_textPortion button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  font-family: "SF pro";
+  padding: 0.3rem 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 24px;
+  color: #ffffff;
+  background: linear-gradient(96.51deg, #18bbfd -4.59%, #3769fe 100%);
+  box-shadow: 0px 4px 15px rgba(88, 74, 255, 0.29);
+  border-radius: 70px;
+  cursor: pointer;
+}
+.button_textPortion button:hover {
+  scale: 0.9;
+}
+.img_carousel img {
+  display: inline-block;
+  height: 14rem;
+  padding: auto;
+  width: 25rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 45px;
+  border-top-right-radius: 45px;
+  opacity: 0.5;
+}
