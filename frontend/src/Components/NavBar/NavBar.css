@@ -1,5 +1,5 @@
 .navbar_root_div {
-  width: auto;
+  background-color: black;
 }
 .top_bar {
   display: flex;
@@ -71,4 +71,7 @@
   border-radius: 5px;
   transition: 0.3s ease-in-out;
   margin-right: 1rem;
+}
+.connect_wallet_btn {
+  padding-right: 1rem;
 }

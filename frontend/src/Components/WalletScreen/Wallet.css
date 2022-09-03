@@ -1,0 +1,332 @@
+.root_div_wallet {
+  justify-content: center;
+  align-items: center;
+  margin-right: 27rem;
+  backdrop-filter: blur(2px);
+  margin-top: -1rem;
+  padding-right: 30rem;
+  padding-left: 15rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+.main_div_wallet {
+  width: 30rem;
+  height: auto;
+  background: #1e1e1e;
+  border-radius: 30px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.walletH1_crossSign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.walletH1_crossSign h1 {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.walletH1_crossSign button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.walletH1_crossSign button:hover {
+  scale: 1.1;
+}
+.walletH1_crossSign button img {
+  width: 1rem;
+  height: 1rem;
+}
+.navigationOfWallet {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 6rem;
+  align-items: center;
+}
+.navigationOfWallet button {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "SF pro";
+  background: none;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+}
+.navigationOfWallet button:hover {
+  border-bottom: 3px solid #356dfe;
+}
+.address_of_crypto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.address_of_crypto label {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.address_of_crypto input {
+  background: none;
+  border: 1px solid #575757;
+  border-radius: 30px;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "SF pro";
+}
+.address_of_crypto input:focus {
+  outline: none;
+}
+.address_of_crypto input::placeholder {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #575757;
+}
+.term_condition_text {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+.term_condition_text span {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #979797;
+}
+.withdraw_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+.withdraw_btn button:hover {
+  scale: 0.98;
+}
+.withdraw_btn button {
+  background: linear-gradient(90.45deg, #1cb1fd 0%, #3373fe 100%);
+  border-radius: 32px;
+  padding: 0.2rem 11rem;
+  border: none;
+  cursor: pointer;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.Crypto_select_option_root_div {
+  width: auto;
+  box-shadow: 10px 4px 45px rgba(89, 74, 255, 0.27);
+  border-radius: 30px;
+}
+.react_selct_option_root_div {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-family: "SF pro";
+  font-size: 13px;
+  color: #ffffff;
+}
+.react_selct_option_root_div img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.plceholder_react_select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.plceholder_react_select img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+.dropDown_wallet_root_div {
+  display: flex;
+  padding: 2.5rem;
+  align-items: center;
+  margin-left: 6.5rem;
+  gap: 1rem;
+}
+.dropDown_wallet_root_div label {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #5f5f5f;
+}
+.amount_Counter_root_div {
+  display: flex;
+  flex-direction: column;
+}
+.amount_Counter_root_div label {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.counter_amount {
+  display: inline-block;
+  background: linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%);
+  box-shadow: 0px 4px 45px rgba(89, 74, 255, 0.207);
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+}
+.counter_root_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter_root_div input:focus {
+  outline: none;
+}
+
+.counter_root_div input {
+  background: none;
+  border: none;
+  width: 19rem;
+  padding-right: 1rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  border-radius: 2rem;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  border-left-color: black;
+  border-right-color: black;
+  padding: 0.6rem;
+  outline: #1cb1fd;
+  box-shadow: inset 10px 10px 50px rgba(0, 0, 0, 0.111),
+    inset 10px 10px 50px rgba(0, 0, 0, 0.977),
+    inset 10px 10px 50px rgba(0, 0, 0, 0), inset 10px 10px 50px rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.btc_deposit_address {
+  display: flex;
+  margin-left: 0.5rem;
+}
+.label_for_btc_deposit_address_input {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+  margin-left: 1rem;
+}
+.btc_deposit_address_input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+  background: none;
+  border: 1px solid #575757;
+  border-radius: 30px;
+  padding: 0.5rem;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "SF pro";
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  width: 25.5rem;
+}
+.btc_deposit_address_input input {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "SF pro";
+}
+.btc_deposit_address_input input:focus {
+  outline: none;
+}
+.btc_deposit_address_input input::placeholder {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #575757;
+}
+.btns_inside_btc_deposit_address_input {
+  display: inline-block;
+}
+.btns_inside_btc_deposit_address_input button:hover {
+  scale: 1.02;
+}
+.btns_inside_btc_deposit_address_input button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0.3rem;
+}
+.btns_inside_btc_deposit_address_input button img {
+  height: 1rem;
+  width: 1rem;
+}
+.QR_code_root_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.text_below_qr_code {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #979797;
+  margin-bottom: 2rem;
+}

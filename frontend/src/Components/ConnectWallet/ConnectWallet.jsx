@@ -1,8 +1,9 @@
 import * as React from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 import "./ConnectWallet.css";
 import { useEffect, useState } from "react";
-import Dropdown from "../DropDown/DropDown";
+import Dropdown from "../WalletScreen/WalletScreen";
 
 export default function Btn() {
   const Btn = styled.button`
@@ -89,19 +90,28 @@ export default function Btn() {
   const connectWalletButton = () => {
     return <Btn onClick={connectWalletHandler}>Connect Wallet</Btn>;
   };
+  const withdrawCurrency = useSelector((state) => state.withdrawReducer.value);
+  const [openWalletMenu, setOpenWalletMenu] = useState(true);
 
+  const openWalletScreenFunction = () => {
+    setOpenWalletMenu(!openWalletMenu);
+  };
   const ConnectedButton = () => {
     return (
       <div className="Btn1">
         <div className="Leftdiv">
           <div className="cryptoValue_wallet">
-            <p>0.011</p>
+            <p>{withdrawCurrency.coinValue}</p>
           </div>
-          {/* <div className="dropdwon_navBar">
-            <Dropdown />
-          </div> */}
+          {!openWalletMenu && (
+            <div className="dropdwon_navBar">
+              <Dropdown />
+            </div>
+          )}
         </div>
-        <div className="Rightdiv">WALLET</div>
+        <div className="Rightdiv" onClick={openWalletScreenFunction}>
+          WALLET
+        </div>
       </div>
     );
   };

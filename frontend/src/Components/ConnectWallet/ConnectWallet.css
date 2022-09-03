@@ -1,14 +1,13 @@
 .Btn1 {
   display: flex;
   justify-content: space-between;
-  width: 14rem;
+  width: 12rem;
   height: 2.3rem;
   background: linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%);
   box-shadow: 0px 4px 45px rgba(88, 74, 255, 0.2);
   border-radius: 30px;
 }
 .Leftdiv {
-  background: linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%);
   display: flex;
   justify-content: space-evenly;
   border-top-left-radius: 30px;
@@ -21,6 +20,8 @@
   font-family: "Sf Pro";
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -29,6 +30,10 @@
   color: #ffffff;
   padding-top: 0.7rem;
   padding-left: 0.5rem;
+  cursor: pointer;
+}
+.Rightdiv:hover {
+  scale: 0.95;
 }
 .cryptoValue_wallet {
   background: none;
@@ -40,11 +45,8 @@
   display: inline-block;
   padding-top: 0.5rem;
   padding-left: 1rem;
+  font-weight: bold;
 }
 .dropdwon_navBar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 2rem;
-  background: none;
+  position: fixed;
 }
