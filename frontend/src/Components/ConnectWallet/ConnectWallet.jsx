@@ -93,9 +93,10 @@ export default function Btn() {
   const withdrawCurrency = useSelector((state) => state.withdrawReducer.value);
   const [openWalletMenu, setOpenWalletMenu] = useState(true);
 
-  const openWalletScreenFunction = () => {
+  const OpenWalletScreenFunction = () => {
     setOpenWalletMenu(!openWalletMenu);
   };
+
   const ConnectedButton = () => {
     return (
       <div className="Btn1">
@@ -109,7 +110,7 @@ export default function Btn() {
             </div>
           )}
         </div>
-        <div className="Rightdiv" onClick={openWalletScreenFunction}>
+        <div className="Rightdiv" onClick={OpenWalletScreenFunction}>
           WALLET
         </div>
       </div>

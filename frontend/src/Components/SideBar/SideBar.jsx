@@ -17,15 +17,15 @@ const SideBar = () => {
           <img src={line} alt="LINE" />
         </div>
       </div>
-      <div className="LeagueName_section_SideBar_main">
-        <LeagueSection />
-      </div>
-      <div className="sidebar_separater">
-        <img src={line} alt="LINE" />
-      </div>
-      <div className="SportsName_section_SideBar_main">
-        <SportsSection />
-      </div>
+        <div className="LeagueName_section_SideBar_main">
+          <LeagueSection />
+        </div>
+        <div className="sidebar_separater">
+          <img src={line} alt="LINE" />
+        </div>
+        <div className="SportsName_section_SideBar_main">
+          <SportsSection />
+        </div>
     </div>
   );
 };

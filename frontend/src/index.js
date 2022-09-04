@@ -6,6 +6,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import WithdrawCurrencySelectorReducer from "./Components/redux/features/CryptoCurrency";
 import DepositCurrencySelectorReducer from "./Components/redux/features/DepositCurrency";
+
 const store = configureStore({
   reducer: {
     withdrawReducer: WithdrawCurrencySelectorReducer,

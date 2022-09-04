@@ -1,0 +1,164 @@
+p {
+  margin: 0;
+}
+
+.MyBetsContainer {
+  background: black;
+  margin-left: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+  margin-right: 1rem;
+  width: 62rem;
+}
+
+.MyBetsHeadings td {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #969696;
+}
+
+.TeamNames p,
+.TeamsScores p,
+.SportsData,
+.TimeData {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.EventData p,
+.OutcomeData p {
+  margin-bottom: 1rem;
+}
+.Odds {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    90deg,
+    #a6f8da 11.84%,
+    #e1f3cf 49.59%,
+    #81baf3 101.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.OddsMain div {
+  margin: auto;
+  padding: 0.5rem;
+  width: 92px;
+  height: 37px;
+  margin-left: 0rem;
+  background: linear-gradient(106.45deg, #2b2b2b -57.93%, #121113 97.2%);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.MyBetsHeadings tr,
+.MyBetsData tr {
+  border-top: 2px solid #cac5c5;
+}
+
+.MyBetsHeadings td,
+.MyBetsData td {
+  height: 150px;
+}
+
+.EventHeading,
+.SportsHeading,
+.OutComeHeading,
+.TimeHeading,
+.OddsHeading,
+.dash {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .dash {
+    display: block;
+  }
+
+  .MyBetsHeadings {
+    display: none;
+  }
+
+  .MyBetsHeadings tr,
+  .MyBetsData tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .TeamNames p,
+  .TeamsScores p,
+  .SportsName,
+  .TimeText {
+    font-size: 14px;
+  }
+
+  .TeamNames,
+  .TeamsScores {
+    gap: 1rem;
+    margin-left: auto;
+    display: flex;
+  }
+
+  .SportsName,
+  .TimeText {
+    margin-left: auto;
+  }
+
+  .OddsMain .OddsData {
+    margin: 0%;
+    margin-left: auto;
+  }
+
+  .MyBetsHeadings td,
+  .MyBetsData td {
+    display: flex;
+    align-items: center;
+  }
+
+  .EventData .EventHeading,
+  .SportsHeading,
+  .OutComeHeading,
+  .TimeHeading,
+  .OddsHeading {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #969696;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: block;
+  }
+
+  .MyBetsHeadings td,
+  .MyBetsData td {
+    height: 50px;
+    padding: 1rem;
+  }
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import Select from "react-select";
 import Vector from "./assets/Vector.png";
-import "./opef.css";
 const customStyles = {
   control: () => ({
     // none of react-select's styles are passed to <Control />

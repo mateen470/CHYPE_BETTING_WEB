@@ -9,9 +9,9 @@ import sportslistIcon from "../assets/sportsicon.png";
 const Navigation = () => {
   const Navigationitems = [
     { path: "/", name: "Dashboard", icon: dashboardIcon },
-    { path: "/mybets", name: "My Bet", icon: mybetsIcon },
-    { path: "/liveevents", name: "Live Events", icon: liveEventIcon },
-    { path: "/startsoon", name: "Starting Soon", icon: startsoonIcon },
+    { path: "/MyBets", name: "My Bet", icon: mybetsIcon },
+    { path: "/LiveEvents", name: "Live Events", icon: liveEventIcon },
+    { path: "/StartingSoon", name: "Starting Soon", icon: startsoonIcon },
     { path: "/sportslist", name: "Sports Lists", icon: sportslistIcon },
   ];
 
