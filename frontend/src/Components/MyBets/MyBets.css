@@ -17,6 +17,7 @@ p {
 }
 
 .MyBetsHeadings td {
+  text-align: start;
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
