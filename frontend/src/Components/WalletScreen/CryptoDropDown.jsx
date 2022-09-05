@@ -40,6 +40,11 @@ const CryptoDropDown = () => {
           </span>
         </div>
       ),
+      coinImage: (
+        <div style={{ display: "inline-block", padding: "0rem" }}>
+          <img src={Eth} />
+        </div>
+      ),
     },
     {
       id: 1,
@@ -79,12 +84,27 @@ const CryptoDropDown = () => {
           </span>
         </div>
       ),
+      coinImage: (
+        <div>
+          <img
+            src={BTC}
+            style={{
+              display: "inline-block",
+              padding: "0rem",
+              width: "1.5rem",
+              height: "1.5rem",
+              borderRadius: "50%",
+            }}
+          />
+        </div>
+      ),
     },
   ];
   const dispatch = useDispatch();
   const [selectedValue, setSelectedValue] = useState(options.label);
   const [minimumValue, setMinimumValue] = useState(options.minimumValue);
   const [cryptoCoinValue, setCoinValue] = useState(options.coinValue);
+  const [coinImage, setCoinImage] = useState(options.coinImage);
   const [subtractedValue, setSubtractedValue] = useState(
     options.subtractedValue
   );
@@ -94,12 +114,14 @@ const CryptoDropDown = () => {
     setMinimumValue(event.minimumValue);
     setSubtractedValue(event.subtractedValue);
     setCoinValue(event.coinValue);
+    setCoinImage(event.coinImage);
     dispatch(
       currencyValue({
         currency: selectedValue,
         minimumAmount: minimumValue,
         subtractedAmount: subtractedValue,
         coinValue: cryptoCoinValue,
+        coinImage: coinImage,
       })
     );
   };
@@ -110,9 +132,16 @@ const CryptoDropDown = () => {
         minimumAmount: minimumValue,
         subtractedAmount: subtractedValue,
         coinValue: cryptoCoinValue,
+        coinImage: coinImage,
       })
     );
-  }, [selectedValue, minimumValue, subtractedValue, cryptoCoinValue]);
+  }, [
+    selectedValue,
+    minimumValue,
+    subtractedValue,
+    cryptoCoinValue,
+    coinImage,
+  ]);
 
   const customStyles = {
     menu: () => ({

@@ -6,7 +6,8 @@ const initialStateValue = {
   currency: "ETH",
   minimumAmount: "0.00000",
   subtractedAmount: "0.0000",
-  coinValue:"0.0000"
+  coinValue: "0.0000",
+  coinImage: " ",
 };
 
 export const WithdrawCurrencySelectorSlice = createSlice({

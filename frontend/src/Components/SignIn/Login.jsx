@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useNavigate } from "react";
 import "./Login.css";
 import { NavLink } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { LoginStatusCheck } from "../redux/features/Login";
 import cross from "./assets/Vector.png";
 import google from "./assets/google.png";
 import facebook from "./assets/facebook.png";
@@ -12,17 +14,26 @@ import {
 import { useAuthState } from "react-firebase-hooks/auth";
 
 const Login = (props) => {
+  const dispatch = useDispatch();
+  const [loginState, setLoginState] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [user, loading, error] = useAuthState(auth);
-
+  const registerSubmit = () => {
+    setLoginState(true);
+  };
   useEffect(() => {
+    dispatch(
+      LoginStatusCheck({
+        login: loginState,
+      })
+    );
     if (loading) {
       // maybe trigger a loading screen
       return;
     }
     if (user);
-  }, [user, loading]);
+  }, [user, loading, loginState]);
   return (
     <div className="SignIn_root_conatiner">
       <div className="signIn_main_conatiner">
@@ -61,6 +72,11 @@ const Login = (props) => {
             Sign In
           </button>
         </div>
+        {/* THIS IS DUMMY BUTTON TO  CHANGE THE REDUX STATE TO 
+        HIDE LOGIN AND SIGNOUT BUTTON AND SHOW RIGHT MENU
+         AFTER SIGNING IN, PUT THIS FUNCTION
+        ON BACKEDND INTEGERATION PROPERLY  */}
+        <button onClick={registerSubmit}>change</button>
         <div className="forgetPassword">
           <NavLink to="/reset"> Forget Password?</NavLink>
         </div>

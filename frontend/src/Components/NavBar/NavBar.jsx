@@ -1,11 +1,13 @@
 import { React, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 import "./NavBar.css";
 import Login from "../SignIn/Login";
 import Register from "../Register/Register";
 import Btn from "../ConnectWallet/ConnectWallet";
 import SearchIcon from "./assets/search.png";
 const NavBar = () => {
+  const logincurrentStatus = useSelector((state) => state.loginReducer.value);
   const [isOpen, setIsOpen] = useState(false);
   const [searchBarData, setSearchBarData] = useState("");
   const setSearchInput = (e) => {
@@ -26,6 +28,7 @@ const NavBar = () => {
   const togglePopup2 = () => {
     setIsOpen2(!isOpen2);
   };
+
   return (
     <div className="navbar_root_div">
       <div>{isOpen && <Login handleClose={togglePopup}></Login>}</div>
@@ -42,17 +45,24 @@ const NavBar = () => {
         </div>
         <div className="btn_topBar_main">
           <div className="btn_topBar">
-            <NavLink to={"/"}>
-              <span onClick={togglePopup} className="topBar_signIn">
-                Sign in
-              </span>
-            </NavLink>
-            <NavLink to={"/"}>
-              <span onClick={togglePopup2} className="topBar_register">
-                Register
-              </span>
-            </NavLink>
-            <div className="connect_wallet_btn">
+            {!logincurrentStatus.login && (
+              <>
+                <NavLink to={"/"}>
+                  <span onClick={togglePopup} className="topBar_signIn">
+                    Sign in
+                  </span>
+                </NavLink>
+                <NavLink to={"/"}>
+                  <span onClick={togglePopup2} className="topBar_register">
+                    Register
+                  </span>
+                </NavLink>{" "}
+              </>
+            )}
+            <div
+              className="connect_wallet_btn"
+              style={{ marginLeft: logincurrentStatus.login ? "13rem" : "" }}
+            >
               <Btn />
             </div>
           </div>

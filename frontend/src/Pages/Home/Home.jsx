@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Home.css";
+import { useSelector } from "react-redux";
 import rightArrow from "./assets/chevronRight.png";
 import leftArrow from "./assets/ChevronLeft.png";
 import NavBar from "../../Components/NavBar/NavBar";
@@ -8,6 +9,7 @@ import Section from "../../Components/SectionNavBar/SectionBar";
 import Slider from "../../Components/Carousel/Carousel";
 import RightMenu from "../../Components/RightPullOutMenu/RightMenu";
 const Home = () => {
+  const logincurrentStatus = useSelector((state) => state.loginReducer.value);
   const [menuOpen, setMenuOpen] = useState(false);
   const Toggle = () => setMenuOpen(!menuOpen);
   return (
@@ -24,29 +26,31 @@ const Home = () => {
       <div className="SectionBar_HomePage_root">
         <Section />
       </div>
-      <div className="rightPullOutMenu_root">
-        <button
-          className="btn_rightPullOutMenu"
-          onClick={Toggle}
-          style={{
-            marginTop: menuOpen ? "20rem" : "15rem",
-            transition: menuOpen ? "0.3s ease-in" : "none",
-          }}
-        >
-          <img
-            className="leftArrow_rightMenu"
-            src={menuOpen ? rightArrow : leftArrow}
-            alt="#"
-          />
-        </button>
-        <div
-          style={{
-            display: menuOpen ? "flex" : "none",
-          }}
-        >
-          <RightMenu />
+      {logincurrentStatus.login && (
+        <div className="rightPullOutMenu_root">
+          <button
+            className="btn_rightPullOutMenu"
+            onClick={Toggle}
+            style={{
+              marginTop: menuOpen ? "20rem" : "15rem",
+              transition: menuOpen ? "0.3s ease-in" : "none",
+            }}
+          >
+            <img
+              className="leftArrow_rightMenu"
+              src={menuOpen ? rightArrow : leftArrow}
+              alt="#"
+            />
+          </button>
+          <div
+            style={{
+              display: menuOpen ? "flex" : "none",
+            }}
+          >
+            <RightMenu />
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

@@ -44,7 +44,7 @@ const Register = (props) => {
   const [date, setDate] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-
+  
   return (
     <div className="Regitser_root_div">
       <div className="Register_Main_container">
