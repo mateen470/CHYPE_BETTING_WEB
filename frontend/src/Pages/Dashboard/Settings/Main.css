@@ -1,0 +1,54 @@
+p{
+    margin: 0%;
+}
+
+.SettingContainer{
+    /* background: #1E1E1E; */
+    padding: 1.5rem;
+    display: flex;
+    width: 100%;
+}
+.Menu, .MenuResponsive{
+    width: 25%;
+    margin: 2rem;
+}
+.Menu{
+    display:none;
+}
+
+.ProfileEdit, .Security, .LogOut{
+    cursor: pointer;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   border-bottom: 3px solid;
+   border-image: linear-gradient(to right, #2c2c2c , #1E1E1E )100% 0%;
+
+}
+
+.ProfileEditText, .SecurityText, .LogOutText{
+    font-family: "SF pro";
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 16px;
+letter-spacing: 0.75px;
+text-transform: capitalize;
+color: #FFFFFF;
+}
+
+.Arrow{
+height: 8px;
+}
+
+@media (max-width:600px){
+.Menu{
+    display: block;
+    width: 100%;
+}
+.MenuResponsive{
+    display: none;
+}
+}
+

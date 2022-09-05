@@ -1,0 +1,193 @@
+p {
+  margin: 0%;
+  width: fit-content;
+}
+
+.DashboardHeadings td,
+.Data td {
+  height: 100px;
+}
+
+.DashboardHeadings tr,
+.Data tr {
+  border-bottom: 1px solid #b1b0b0;
+}
+.DashboardContainer {
+  margin: 1rem;
+  background: linear-gradient(97.91deg, #393939 -51.8%, #141415 100%);
+  border-radius: 24px;
+}
+
+.BetsHistoryText {
+  padding-top: 2%;
+  padding-left: 2%;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+.DashboardTable {
+  width: 100%;
+}
+
+.DashboardHeadings td {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #969696;
+}
+
+.EventData p,
+.ScoreData p,
+.SportsData,
+.OutcomeData,
+.Amount {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.EventData,
+.ScoreData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: fit-content;
+  margin: auto;
+}
+
+.OdsData {
+  margin: auto;
+  width: 92px;
+  height: 37px;
+  background: linear-gradient(106.45deg, #2b2b2b -57.93%, #121113 97.2%);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+.OdsData p {
+  margin: auto;
+  line-height: 35px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    #a6f8da 11.84%,
+    #e1f3cf 49.59%,
+    #81baf3 101.32%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.TotalStakeData,
+.EstPayOutData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EventHeading,
+.ScoreHeading,
+.SportsHeading,
+.OutcomeHeading,
+.OdsHeading,
+.TotalStakeHeading,
+.EstPayOutHeading,
+.Dash {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .EventHeading,
+  .ScoreHeading,
+  .SportsHeading,
+  .OutcomeHeading,
+  .OdsHeading,
+  .TotalStakeHeading,
+  .EstPayOutHeading,
+  .Dash {
+    display: block;
+    font-family: "SF pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #969696;
+  }
+
+  .DashboardHeadings {
+    display: none;
+  }
+
+  .DepositsAndWithDraws {
+    flex-direction: column;
+  }
+  .DashboardHeadings tr,
+  .Data tr {
+    padding: 1rem;
+  }
+  .DashboardHeadings td,
+  .Data td {
+    height: 50px;
+  }
+
+  .OdsData {
+    margin: 0%;
+  }
+
+  .EventData,
+  .ScoreData {
+    margin: 0%;
+    flex-direction: row;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 750px) {
+  .DashboardHeadings td {
+    font-size: 14px;
+  }
+  .OdsData {
+    width: fit-content;
+  }
+
+  .OdsData p {
+    margin: 0 0.5rem;
+  }
+
+  .EventData p,
+  .ScoreData p,
+  .SportsData,
+  .OutcomeData,
+  .Amount {
+    font-size: 14px;
+  }
+}

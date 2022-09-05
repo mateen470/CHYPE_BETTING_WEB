@@ -141,13 +141,14 @@ const LiveEvents = () => {
                           <p className="Time_LiveEvents">{item.Time}</p>
                           <p className="Half_LiveEvents">{item.Half}</p>
                         </div>
-                        <div onClick={toggle1} className="Logos">
+                        <div id={index2} onClick={toggle1} className="Logos">
                           {/* <img
                             className="statsIcon_LiveEvents"
                             src={StatsLogo}
                             id={index2}
                           /> */}
                           <span
+                            id={index2}
                             style={{
                               color: "whitesmoke",
                               fontFamily: "SF pro",

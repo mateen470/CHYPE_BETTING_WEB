@@ -6,18 +6,16 @@ import mybetsIcon from "../assets/mybetsicon.png";
 import liveEventIcon from "../assets/liveeventicon.png";
 import dashboardIcon from "../assets/dashboard.png";
 import startsoonIcon from "../assets/startsoonicon.png";
-import sportslistIcon from "../assets/sportsicon.png";
 import home from "../assets/home.png";
 const Navigation = () => {
   const logincurrentStatus = useSelector((state) => state.loginReducer.value);
   const Navigationitems = [
     logincurrentStatus.login
-      ? { path: "/dashboard", name: "Dashboard", icon: dashboardIcon }
+      ? { path: "/profile", name: "Dashboard", icon: dashboardIcon }
       : { path: "/", name: "Home", icon: home },
     { path: "/MyBets", name: "My Bet", icon: mybetsIcon },
     { path: "/LiveEvents", name: "Live Events", icon: liveEventIcon },
     { path: "/StartingSoon", name: "Starting Soon", icon: startsoonIcon },
-    { path: "/sportslist", name: "Sports Lists", icon: sportslistIcon },
   ];
 
   return (

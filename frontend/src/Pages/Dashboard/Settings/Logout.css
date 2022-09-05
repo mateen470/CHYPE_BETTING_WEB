@@ -1,0 +1,106 @@
+.LogoutContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 50%;
+  height: 304px;
+  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
+  border-radius: 30px;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0%;
+  bottom: 0;
+}
+.Cross {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  margin-left: auto;
+}
+.Cross:hover {
+  scale: 0.9;
+}
+
+.Prompt {
+  margin: auto;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+.Button {
+  display: flex;
+  gap: 1rem;
+}
+.Button {
+  display: flex;
+  gap: 1rem;
+}
+
+.CancelButton:hover {
+  scale: 0.9;
+}
+.CancelButton {
+  cursor: pointer;
+  height: 2.5rem;
+  border: none;
+  margin: auto;
+  width: 50%;
+  background: linear-gradient(90.45deg, #1cb1fd 0%, #356dfe 100%);
+  border-radius: 32px;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+.LogoutButton:hover {
+  scale: 0.9;
+}
+.LogoutButton {
+  cursor: pointer;
+  height: 2.5rem;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+  border: none;
+  margin: auto;
+  width: 50%;
+  background: #ff0b0b;
+  border-radius: 32px;
+}
+.Line {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .LogoutContainer {
+    width: 100%;
+    top: auto;
+  }
+  .Cross {
+    display: none;
+  }
+  .Line {
+    display: block;
+    height: 2%;
+    width: 10%;
+    margin: 0 auto;
+  }
+}

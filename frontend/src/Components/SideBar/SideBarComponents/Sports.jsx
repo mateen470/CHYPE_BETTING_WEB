@@ -20,11 +20,11 @@ const Sports = () => {
     { path: "/", sportsName: "Baseball", sportsIcon: baseball },
     { path: "/", sportsName: "Basketball", sportsIcon: basektball },
     { path: "/", sportsName: "Boxing", sportsIcon: boxing },
-    { path: "/", sportsName: "Cricket", sportsIcon: cricket },
-    { path: "/", sportsName: "Snooker", sportsIcon: snooker },
+    { path: "/", sportsName: "Formula", sportsIcon: cricket },
+    { path: "/", sportsName: "Hockey", sportsIcon: snooker },
     { path: "/", sportsName: "Soccer", sportsIcon: soccer },
     { path: "/", sportsName: "Tennis", sportsIcon: tennis },
-    { path: "/", sportsName: "Table Tennis", sportsIcon: tableTennis },
+    { path: "/", sportsName: "UFC", sportsIcon: tableTennis },
   ];
   return (
     <div className="sideBar_sports_section_root_div">

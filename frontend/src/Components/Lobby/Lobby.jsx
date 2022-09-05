@@ -85,6 +85,7 @@ const Lobby = () => {
   }
   function toggle1(event) {
     const key = event.target.id;
+    console.log(event.target);
     if (flag1 === -1) setFlag1(key);
     else if (flag1 === key) setFlag1(-1);
     else setFlag1(key);
@@ -147,13 +148,18 @@ const Lobby = () => {
                             <p className="Time">{item.Time}</p>
                             <p className="Half">{item.Half}</p>
                           </div>
-                          <div onClick={toggle1} className="LogosDashboard">
+                          <div
+                            id={index2}
+                            onClick={toggle1}
+                            className="LogosDashboard"
+                          >
                             {/* <img
                               className="statsIcon_LiveEvents"
                               src={StatsLogo}
                               id={index2}
                             /> */}
                             <span
+                              id={index2}
                               style={{
                                 color: "whitesmoke",
                                 fontFamily: "SF pro",
@@ -164,9 +170,9 @@ const Lobby = () => {
                               STATS
                             </span>
                             <img
+                              id={index2}
                               className="DropDown"
                               src={DropdownLogo}
-                              id={index2}
                             />
                           </div>
                         </div>

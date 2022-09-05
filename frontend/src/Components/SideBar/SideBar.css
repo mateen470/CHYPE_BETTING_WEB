@@ -8,9 +8,13 @@
 }
 .SideBar_root_div > img {
   display: inline-block;
-  margin-left: -1rem;
-  width: 7rem;
-  height: 7rem;
+}
+.Navigation_section_and_logo > img {
+  width: 15rem;
+  height: 12rem;
+  padding: 0;
+  margin-bottom: -5rem;
+  margin-left: -0.5rem;
 }
 .Navigation_section_and_logo {
   position: fixed;
@@ -22,7 +26,7 @@
   margin-bottom: 1.5rem;
 }
 .LeagueName_section_SideBar_main {
-  margin-top: 25rem;
+  margin-top: 22rem;
   z-index: -1;
   margin-bottom: 1.5rem;
 }

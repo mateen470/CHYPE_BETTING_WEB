@@ -1,0 +1,124 @@
+p {
+  margin: 0%;
+}
+.SecurityContainer {
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
+  border-radius: 30px;
+}
+
+.SecurityHeading {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+.downArrow_security_dashboard:hover {
+  scale: 0.9;
+}
+.downArrow_security_dashboard {
+  width: 1rem;
+  height: 0.8rem;
+  cursor: pointer;
+}
+.ChangePassword {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #4f4f4f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ChangePasswordText {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+form {
+  width: 100%;
+}
+
+.OldPassLabel,
+.NewPassLabel,
+.ConfPassLabel {
+  display: flex;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+.star {
+  color: red;
+}
+
+.OldPassInput,
+.NewPassInput,
+.ConfPassInput {
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background: none;
+  border-radius: 30px;
+  border: 1px solid #4f4f4f;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+.SubmitButton {
+  height: 2.5rem;
+  width: 100%;
+  border: 1px solid #4f4f4f;
+  background: linear-gradient(90.45deg, #1cb1fd 0%, #356dfe 100%);
+  border-radius: 32px;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-indent: 5px;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .SecurityContainer {
+    display: none;
+    width: 100%;
+    border-radius: 0%;
+    background: none;
+  }
+  .imageContainer {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #212122 -26.43%, #121213 100%);
+    border-radius: 10px;
+    text-align: center;
+    padding: 0.2rem;
+  }
+
+  .BackAndHeading {
+    display: flex;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,110 @@
+p {
+  margin: 0%;
+}
+
+.FundingsData td,
+.FundingsHeading td {
+  height: 100px;
+}
+
+.FundingsData tr,
+.FundingsHeading tr {
+  border-bottom: 1px solid #494949;
+}
+.FundingsHeading td {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #969696;
+}
+
+.HistoryHeading {
+  padding: 1rem;
+  padding-left: 6%;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  text-indent: 5px;
+  color: #ffffff;
+  border-bottom: 1px solid #494949;
+}
+
+.FundingsTable {
+  width: 100%;
+}
+
+.DateData,
+.TimeData,
+.ActionData,
+.Amount {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.DateHeading,
+.TimeHeading,
+.ActionHeading,
+.AmountHeading {
+  display: none;
+}
+
+.AmountData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .FundingsData tr,
+  .FundingsHeading tr {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .FundingsData td,
+  .FundingsHeading td {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .FundingsHeading {
+    display: none;
+  }
+
+  .DateHeading,
+  .TimeHeading,
+  .ActionHeading,
+  .AmountHeading {
+    display: block;
+    font-family: "SF pro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #969696;
+  }
+
+  .DateData,
+  .TimeData,
+  .ActionData,
+  .Amount {
+    font-size: 14px;
+  }
+}

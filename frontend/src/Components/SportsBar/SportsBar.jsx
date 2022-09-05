@@ -9,35 +9,28 @@ import cricket from "./assets/cricket.png";
 import snooker from "./assets/snooker.png";
 import tennis from "./assets/tennisball.png";
 import soccer from "./assets/football.png";
-import tableTennis from "./assets/pinpong.png";
+import ufc from "./assets/pinpong.png";
 import "./sports.css";
 const SportsBar = () => {
   const sportsBarList = [
     { path: "#", image: soccer, sportsName: "soccer" },
     { path: "#", image: tennis, sportsName: "tennis" },
-    { path: "#", image: cricket, sportsName: "cricket" },
-    { path: "#", image: snooker, sportsName: "snooker" },
+    { path: "#", image: cricket, sportsName: "formula" },
+    { path: "#", image: snooker, sportsName: "hockey" },
     { path: "#", image: boxing, sportsName: "boxing" },
     { path: "#", image: basektball, sportsName: "basketball" },
     { path: "#", image: baseball, sportsName: "baseball" },
     { path: "#", image: americanFootball, sportsName: "rugby" },
-    { path: "#", image: soccer, sportsName: "soccer" },
-    { path: "#", image: tennis, sportsName: "tennis" },
-    { path: "#", image: cricket, sportsName: "cricket" },
-    { path: "#", image: snooker, sportsName: "snooker" },
-    { path: "#", image: boxing, sportsName: "boxing" },
-    { path: "#", image: basektball, sportsName: "basketball" },
-    { path: "#", image: baseball, sportsName: "baseball" },
-    { path: "#", image: americanFootball, sportsName: "rugby" },
+    { path: "#", image: ufc, sportsName: "UFC" },
   ];
   const [width, setWidth] = useState(0);
-  const [leftWidth, setLeftWidth] = useState(0);
+  // const [leftWidth, setLeftWidth] = useState(0);
 
   const carousel = useRef();
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-    let log = width + carousel.current.offsetWidth - 1000;
-    setLeftWidth(log);
+    // let log = width + carousel.current.offsetWidth - 1000;
+    // setLeftWidth(log);
   }, []);
 
   return (
@@ -45,7 +38,7 @@ const SportsBar = () => {
       <motion.div ref={carousel} className="carousel">
         <motion.div
           drag="x"
-          dragConstraints={{ right: width, left: -leftWidth }}
+          dragConstraints={{ right: width, left: -width }}
           className="inner-carousel"
         >
           {sportsBarList.map((sportsItem, index) => (

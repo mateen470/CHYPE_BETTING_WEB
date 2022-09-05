@@ -1,0 +1,111 @@
+p {
+  margin: 0%;
+}
+
+.Back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  background: linear-gradient(135deg, #212122 -26.43%, #121213 100%);
+  border-radius: 10px;
+}
+
+.profilePicContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 114px;
+  height: 114px;
+  background: rgba(44, 44, 44, 0.8);
+  border-radius: 50%;
+  margin: auto;
+}
+
+.userIcon {
+  width: 60px;
+  height: 63.33px;
+  text-align: center;
+}
+
+.FullName {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: center;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.userName {
+  text-align: center;
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #b8b8b8;
+}
+
+.Dashboard,
+.Fundings,
+.Bets,
+.Settings {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 80px;
+  padding: 1rem;
+}
+
+.DashboardText,
+.FundingsText,
+.BetsText,
+.SettingsText {
+  font-family: "SF pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.MobileBar {
+  display: none;
+}
+@media (max-width: 600px) {
+  .DesktopBar {
+    display: none;
+  }
+
+  .MobileBar {
+    display: flex;
+    position: fixed;
+    background: #232323;
+    border-top: 1px solid #5b5b5b;
+    box-shadow: 0px -4px 14px rgba(88, 74, 255, 0.15);
+    bottom: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .Dashboard,
+  .Fundings,
+  .Bets,
+  .Settings {
+    flex-direction: column;
+    padding: 0%;
+    gap: 0.2rem;
+  }
+}

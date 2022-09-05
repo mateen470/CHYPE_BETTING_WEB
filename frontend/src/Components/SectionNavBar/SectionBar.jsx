@@ -1,20 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-
 import "./sectionbar.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
-
+import { Routes, Route } from "react-router-dom";
 import LobbySection from "../Lobby/Lobby";
 import MyBets from "../MyBets/MyBets";
 import LiveEvents from "../LiveEvents/LiveEvents";
 import StartingSoon from "../StartingSoon/StartingSoon";
-import { run } from "../Scripts/game";
+import ProfileDash from "../../Pages/Dashboard/Profile/MainDashboard";
+import FundingsMain from "../../Pages/Dashboard/Profile/FundingsMain";
+import Bets from "../../Pages/Dashboard/Profile/Bets";
+import Settings from "../../Pages/Dashboard/Settings/Main";
+// import { run } from "../Scripts/game";
 const SectionBar = () => {
   let activeStyle = {
     background: " linear-gradient(102.63deg, #1A1A1A 8.63%, #000000 101.21%)",
@@ -154,11 +151,15 @@ const SectionBar = () => {
       </motion.div>
       {/* MOBILEVIEW SECTION BAR ENDS */}
       <Routes>
-        <Route exact path="/" element={<LobbySection />}></Route>
+        <Route path="/" element={<LobbySection />}></Route>
         <Route path="/MyBets" element={<MyBets />}></Route>
         <Route path="/LiveEvents" element={<LiveEvents />}></Route>
         <Route path="/StartingSoon" element={<StartingSoon />}></Route>
-        <Route path="/" element={<Navigate replace to="/" />} />
+        {/* dashboard routing=> not working properly */}
+        <Route path="/profile" element={<ProfileDash />}></Route>
+        <Route path="/Fundings" element={<FundingsMain />}></Route>
+        <Route path="/Bets" element={<Bets />}></Route>
+        <Route path="/Settings" element={<Settings />}></Route>
       </Routes>
     </div>
   );
