@@ -125,15 +125,12 @@ const RightMenu = () => {
       winner: "PHILEDELPHIA PHILLIES",
       points: "3.084",
     },
-    {
-      team1: " PITSBURGH PIRATE",
-      team2: "PHILEDELPHIA PHILLIES",
-      winner: "PHILEDELPHIA PHILLIES",
-      points: "3.084",
-    },
   ];
   const multipleScreenData = [];
 
+  const closeSingleMatchBet = (object, index) => {
+    console.log(object.index);
+  };
   return (
     <div className="rightPullOutMenu_main">
       <div className="upperPortion_rightMenu">
@@ -177,9 +174,9 @@ const RightMenu = () => {
       <div className="clearAll">
         <button>Clear All</button>
       </div>
-      {betData.map((bets) => (
+      {betData.map((bets, index) => (
         /* SINGLECREEN */
-        <div style={{ display: toggleSingleScreen }}>
+        <div style={{ display: toggleSingleScreen }} key={index}>
           <div className="betComponent_main">
             <div className="matchDetailsForBet">
               <div className="TeamsName_rightMenu">
@@ -190,7 +187,10 @@ const RightMenu = () => {
                   </span>
                 </div>
               </div>
-              <button className="closeButtonOfSingleBet">
+              <button
+                className="closeButtonOfSingleBet"
+                onClick={closeSingleMatchBet(bets, index)}
+              >
                 <img src={cross} alt="CLOSE ICON" />
               </button>
               <hr />

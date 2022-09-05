@@ -80,6 +80,8 @@ p {
 .groundPic_Full {
   width: 95%;
   margin: auto;
+  border-radius: 0.5rem;
+  opacity: 0.7;
 }
 
 .TimeAndHalf_Stats_Full {

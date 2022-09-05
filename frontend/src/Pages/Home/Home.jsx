@@ -32,7 +32,7 @@ const Home = () => {
             className="btn_rightPullOutMenu"
             onClick={Toggle}
             style={{
-              marginTop: menuOpen ? "20rem" : "15rem",
+              marginTop: menuOpen ? "6rem" : "15rem",
               transition: menuOpen ? "0.3s ease-in" : "none",
             }}
           >
