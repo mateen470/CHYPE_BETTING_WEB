@@ -55,6 +55,18 @@ const StartingSoon = () => {
       PredictionValue2: "1.08",
       DrawPredictionValue: "1.08",
     },
+    {
+      LeagueName: "League2",
+      Team1Name: "Smouaha SC",
+      Team2Name: "Al Ahly",
+      Team1Score: "2",
+      Team2Score: "0",
+      Time: "39'",
+      Half: "1st Half",
+      PredictionValue1: "1.08",
+      PredictionValue2: "1.08",
+      DrawPredictionValue: "1.08",
+    },
   ];
   function toggle(event) {
     const key = event.target.parentElement.id;
@@ -109,13 +121,6 @@ const StartingSoon = () => {
                           {item.Team2Name}
                         </p>
                       </div>
-
-                      <img
-                        className="statsIcon_StartingSoon"
-                        src={statsLogo}
-                        onClick={toggle1}
-                        id={index2}
-                      />
                     </div>
                     <div className="RightMain_StartingSoon">
                       <div className="Predictions_StartingSoon">

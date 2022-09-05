@@ -10,6 +10,11 @@ p {
   margin-right: 1rem;
   width: 62rem;
 }
+.dropDown_MyBets {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7.5rem;
+}
 
 .MyBetsHeadings td {
   font-family: "SF pro";
@@ -80,7 +85,7 @@ p {
 
 .MyBetsHeadings td,
 .MyBetsData td {
-  height: 150px;
+  height: 7rem;
 }
 
 .EventHeading,

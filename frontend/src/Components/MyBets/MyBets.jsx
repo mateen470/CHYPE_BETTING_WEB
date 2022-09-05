@@ -1,9 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import "./MyBets.css";
-
 import Select from "react-select";
+const customStyles = {
+  menu: () => ({
+    background: "linear-gradient(96.51deg, #18BBFD -4.59%, #3769FE 100%)",
+    borderRadius: "0.3rem",
+    marginTop: "0.5rem",
+    position: "absolute",
+  }),
+  option: () => ({
+    background: "none",
+    cursor: "pointer",
+    borderRadius: "0.4rem",
+    padding: "0.5rem",
+    zIndex: "10",
+  }),
+  control: () => ({
+    background: "linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%)",
+    borderRadius: "30px",
+    display: "flex",
+    width: "7rem",
+  }),
+  indicatorSeparator: () => ({
+    display: "none",
+  }),
+  dropdownIndicator: () => ({
+    display: "flex",
+    color: "#787878",
+    paddingRight: "0.5rem",
+  }),
+};
 
 const MyBets = () => {
+  const [myBetsDropDownValue, setMyBetsDropDownValue] = useState("");
+
+  const MyBetsOption = [
+    {
+      value: "Active",
+      label: (
+        <div
+          style={{
+            fontFamily: "SF pro",
+            color: "white",
+            FontSize: "2rem",
+            fontWeight: "bold",
+          }}
+        >
+          Active
+        </div>
+      ),
+    },
+    {
+      value: "Settled",
+      label: (
+        <div
+          style={{
+            fontFamily: "SF pro",
+            color: "white",
+            FontSize: "2rem",
+            fontWeight: "bold",
+          }}
+        >
+          Settled
+        </div>
+      ),
+    },
+  ];
   const Data = [
     {
       EventTeam1: "Smouaha SC",
@@ -36,6 +98,14 @@ const MyBets = () => {
 
   return (
     <div className="MyBetsContainer">
+      <div className="dropDown_MyBets">
+        <Select
+          options={MyBetsOption}
+          placeholder={<div className="plceholder_react_select">STATUS</div>}
+          styles={customStyles}
+          onChange={(e) => setMyBetsDropDownValue(e.label)}
+        />
+      </div>
       <table style={{ width: "100%" }}>
         <thead className="MyBetsHeadings">
           <tr>

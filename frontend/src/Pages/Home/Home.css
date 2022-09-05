@@ -6,3 +6,32 @@
   display: inline-block;
   margin-top: 5rem;
 }
+.rightPullOutMenu_root {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 10;
+  right: 1rem;
+  top: 2rem;
+}
+.btn_rightPullOutMenu {
+  background: linear-gradient(104.01deg, #1b80cb -33.89%, #002e8d 101.19%);
+  border: none;
+  height: 3rem;
+  width: 1rem;
+  border-radius: 2px;
+}
+.leftArrow_rightMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.leftArrow_rightMenu:hover {
+  scale: 1.1;
+}

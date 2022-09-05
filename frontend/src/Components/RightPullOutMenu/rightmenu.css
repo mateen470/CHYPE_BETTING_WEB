@@ -1,0 +1,341 @@
+.rightPullOutMenu_main {
+    position: relative;
+    width: 25rem;
+    background: black;
+    border-radius: 0.7rem;
+  }
+  .betSlipAnd_casseteIcon_main {
+    display: inline-block;
+    border-radius: 0.7rem;
+    margin-top: 0.5rem;
+    width: 25rem;
+    height: 4rem;
+    background: #11131c;
+  }
+  .betSlipAnd_casseteIcon_img {
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: -22.5rem;
+  }
+  .betSlipAnd_casseteIcon_dropDown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: -1.5rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .betSlipAnd_casseteIcon_dropDown img {
+    height: 1.2rem;
+    width: 1.2rem;
+  }
+  .single_parley_bitcoinDropDown_main {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  .single_parley_main {
+    display: inline-block;
+    margin-left: 5.5rem;
+    margin-top: 0.5rem;
+    background: #11131c;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .single,
+  .parley {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .single:hover,
+  .parley:hover {
+    color: #ffffff;
+    font-size: 15px;
+  }
+  .bitcoinDropDown_main {
+    display: inline-block;
+    margin-left: 2.5rem;
+    margin-top: 0.5rem;
+    background: #2e2e48;
+    border-radius: 5px;
+  }
+  .currency {
+    display: inline-block;
+    margin-left: 0.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .currency_dropDown {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    padding-right: 0.2rem;
+  }
+  .selectOdds_filterIcon_main {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  .selectOdds_span {
+    display: inline-block;
+    margin-left: 9rem;
+    margin-top: 0.8rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .slectodds_filterIcon {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 6.3rem;
+  }
+  .betComponent_main {
+    display: inline-block;
+  }
+  .matchDetailsForBet {
+    margin-top: 0.5rem;
+    padding-top: 0.3rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+    width: 24rem;
+    background-color: #212134;
+    border-radius: 5px;
+  }
+  .TeamsName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  .rightPanel_liveBox_main {
+    display: inline-block;
+    margin-left: -20rem;
+    background-color: #ee0202;
+    padding: 0 0.5rem;
+    border-radius: 2px;
+  }
+  .Live_Span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .rightPanel_teamsName_main {
+    display: inline-block;
+    font-family: "Poppins";
+    margin-left: 0.5rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .team1_span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .betDetails_main {
+    display: inline-block;
+    background: #11131c;
+    width: 23rem;
+    margin-left: 0.5rem;
+    height: 7rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+  }
+  .winner_extraInning_span {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #5e5e5e;
+  }
+  .Winner_team_name_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .winnerTameName {
+    display: inline-block;
+    margin-left: 4rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .currency_blackBox_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .currency_blackBox1,
+  .currency_blackBox2 {
+    background: #000000;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem 2rem;
+  }
+  .blackBox1_points {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .blackBox_currencyIcon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .winnerTeamPoints {
+    display: inline-block;
+    margin-left: 3rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+    color: #5243ff;
+  }
+  .totalStake_payOut_est_main {
+    background: #212134;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 5rem;
+  }
+  .totalStake_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6rem;
+    gap: 2.5rem;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+  .etheruem_totalStak {
+    display: inline-block;
+    margin-left: -2rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  .payout_Est_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 0.6rem;
+    color: #ffffff;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+  }
+  .placeBets_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 2rem;
+    margin-top: -0.5rem;
+    background: #584aff;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .placeBets_span {
+    display: inline-block;
+    margin-left: 9.5rem;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #ffffff;
+  }
+  .placeBets_arrow {
+    display: inline-block;
+    margin-left: 7rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  

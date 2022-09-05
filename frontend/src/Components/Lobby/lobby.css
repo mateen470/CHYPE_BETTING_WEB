@@ -1,3 +1,8 @@
+.DashboardRoot {
+  display: flex;
+  flex-direction: column;
+}
+
 .DashboardContainer {
   margin-left: 0.5rem;
   margin-top: 3.5rem;
@@ -18,23 +23,58 @@ p {
 .MainMenu {
   display: flex;
   padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.dropDownLobbySection {
+.dropDownIcon {
   margin-left: auto;
-  width: 1.2rem;
+  width: 1rem;
   height: 0.8rem;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
-.dropDownLobbySection:hover {
-scale: 0.9;
+.dropDownIcon:hover {
+  scale: 0.9;
 }
-
+.TimeHalfLogos_Dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* .statsIcon_LiveEvents {
+  background: linear-gradient(
+    133.83deg,
+    rgba(30, 121, 203, 0.5) 9.22%,
+    rgba(37, 101, 203, 0.5) 100%
+  );
+} */
+.Arrow {
+  margin: 0.1rem 0.2rem 0.2rem 0.2rem;
+}
+.DropDown {
+  display: inline-block;
+  width: 1rem;
+  height: 0.8rem;
+}
+.LogosDashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+.LogosDashboard:hover {
+  scale: 0.9;
+}
 .DashboardMatch {
   border-top: 2px solid grey;
   display: flex;
   background: black;
   padding: 1rem;
+  flex-direction: column;
+  width: 100%;
 }
 
 .LiveText {

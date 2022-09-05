@@ -9,6 +9,32 @@ p {
   border-radius: 20px;
 }
 
+.BarAndText {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.FullDetailsText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: grey;
+  font-size: 1rem;
+  font-family: "SF pro";
+  font-size: 13px;
+}
+.FullDetailsText:hover {
+  color: white;
+  scale: 0.9;
+}
+
+.fullDetail_Arrow {
+  width: 1rem;
+  height: 0.5rem;
+}
+
 .statsLeft {
   width: 50%;
 }
@@ -121,10 +147,10 @@ p {
   text-transform: capitalize;
   color: #969696;
 }
-.statsBar:hover{
+.statsBar:hover {
   cursor: pointer;
 }
-.statsBar_element:hover{
+.statsBar_element:hover {
   scale: 1.1;
 }
 .LeagueName {

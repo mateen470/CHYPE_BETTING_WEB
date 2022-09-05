@@ -32,7 +32,7 @@ const LiveEvents = () => {
       DrawPredictionValue: "1.08",
     },
     {
-      LeagueName: "League1",
+      LeagueName: "League2",
       Team1Name: "Smouaha SC",
       Team2Name: "Al Ahly",
       Team1Score: "2",
@@ -44,7 +44,7 @@ const LiveEvents = () => {
       DrawPredictionValue: "1.08",
     },
     {
-      LeagueName: "League2",
+      LeagueName: "League1",
       Team1Name: "Smouaha SC",
       Team2Name: "Al Ahly",
       Team1Score: "2",
@@ -136,16 +136,34 @@ const LiveEvents = () => {
                           {item.Team2Score}
                         </p>
                       </div>
-                      <div className="TimeAndHalf_LiveEvents">
-                        <p className="Time_LiveEvents">{item.Time}</p>
-                        <p className="Half_LiveEvents">{item.Half}</p>
+                      <div className="TimeHalfLogo">
+                        <div className="TimeAndHalf_LiveEvents">
+                          <p className="Time_LiveEvents">{item.Time}</p>
+                          <p className="Half_LiveEvents">{item.Half}</p>
+                        </div>
+                        <div onClick={toggle1} className="Logos">
+                          {/* <img
+                            className="statsIcon_LiveEvents"
+                            src={StatsLogo}
+                            id={index2}
+                          /> */}
+                          <span
+                            style={{
+                              color: "whitesmoke",
+                              fontFamily: "SF pro",
+                              fontSize: "10px",
+                              color: "grey",
+                            }}
+                          >
+                            STATS
+                          </span>
+                          <img
+                            src={DropdownLogo}
+                            className="Logos_arrow"
+                            id={index2}
+                          />
+                        </div>
                       </div>
-                      <img
-                        className="statsIcon_LiveEvents"
-                        src={StatsLogo}
-                        onClick={toggle1}
-                        id={index2}
-                      />
                     </div>
                     <div className="RightMain_LiveEvents">
                       <div className="Predictions_LiveEvents">

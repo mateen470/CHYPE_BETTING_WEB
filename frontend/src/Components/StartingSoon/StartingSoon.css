@@ -35,9 +35,10 @@ p {
 
 .dropDownIcon_StartingSoon {
   margin-left: auto;
-  width: 1.2rem;
+  width: 1rem;
   height: 0.8rem;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 .dropDownIcon_StartingSoon:hover {
   scale: 0.9;
@@ -87,8 +88,8 @@ p {
 }
 
 .statsIcon_StartingSoon {
-  height: 2rem;
-  width: 2rem;
+  height: 11px;
+  width: 11px;
   position: relative;
   top: 3rem;
   right: 2rem;

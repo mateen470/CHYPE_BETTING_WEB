@@ -5,8 +5,9 @@ import FBC from "../Assets/pngwing 2.png";
 import RMD from "../Assets/pngwing 1.png";
 import snooker from "../Assets/snooker.jpg";
 import basketball from "../Assets/basketBall.jpg";
+import Back from "../Assets/Vector6.png";
 
-const FullMatchStats = () => {
+const FullMatchStats = ({ Flag, SetFlag }) => {
   const [view, setView] = React.useState();
   const gameName = "football";
   const CardsData = {
@@ -65,25 +66,28 @@ const FullMatchStats = () => {
     },
   ];
   return (
-    <div className="Stats">
-      <div className="statsRight">
-        <div className="TimeAndHalf_Stats">
-          <p className="Time_Stats">39'</p>
-          <p className="Half_Stats">First Half</p>
+    <div className="Stats_Full">
+      <div className="statsRight_Full">
+        <div onClick={() => SetFlag(!Flag)} className="imageContainer_Full">
+          <img src={Back}/>
         </div>
-        <div className="ScoreAndClub">
+        <div className="TimeAndHalf_Stats_Full">
+          <p className="Time_Stats_Full">39'</p>
+          <p className="Half_Stats_Full">First Half</p>
+        </div>
+        <div className="ScoreAndClub_Full">
           <img src={FBC} />
-          <p className="Club1Name">FCB</p>
-          <p className="Points">0:1</p>
-          <div className="Club2Info">
-            <p className="Club2Name">RMA</p>
-            <p className="Club2"> K.Benz..</p>
+          <p className="Club1Name_Full">FCB</p>
+          <p className="Points_Full">0:1</p>
+          <div className="Club2Info_Full">
+            <p className="Club2Name_Full">RMA</p>
+            <p className="Club2_Full"> K.Benz..</p>
           </div>
 
           <img src={RMD} />
         </div>
         <img
-          className="groundPic"
+          className="groundPic_Full"
           src={
             gameName === "football"
               ? football
@@ -95,19 +99,19 @@ const FullMatchStats = () => {
           }
         ></img>
       </div>
-      <div className="statsLeft">
-        <div className="LiveStats">
-          <p className="LiveStatsHeading">Live Stats</p>
-          <div className="Cards">
+      <div className="statsLeft_Full">
+        <div className="LiveStats_Full">
+          <p className="LiveStatsHeading_Full">Live Stats</p>
+          <div className="Cards_Full">
             <p>{CardsData.Team1RedCards}</p>
             <img src="https://img.icons8.com/office/16/000000/red-yellow-cards.png" />
             <p>{CardsData.Team1YellowCards}</p>
-            <p className="cardsText">Cards</p>
+            <p className="cardsText_Full">Cards</p>
             <p>{CardsData.Team2YellowCards}</p>
             <img src="https://img.icons8.com/office/16/000000/red-yellow-cards.png" />
             <p>{CardsData.Team2RedCards}</p>
           </div>
-          <div className="Stats1Data">
+          <div className="Stats1Data_Full">
             <p>Corners</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{CardsData.Team1Corners}</p>
@@ -129,7 +133,7 @@ const FullMatchStats = () => {
               <p>{CardsData.Team2Corners}</p>
             </div>
           </div>
-          <div className="Stats1Data">
+          <div className="Stats1Data_Full">
             <p>Passes</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{CardsData.Team1Passes}</p>
@@ -151,7 +155,7 @@ const FullMatchStats = () => {
               <p>{CardsData.Team2Passes}</p>
             </div>
           </div>
-          <div className="Stats1Data">
+          <div className="Stats1Data_Full">
             <p>Fouls</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{CardsData.Team1Fouls}</p>
@@ -173,7 +177,7 @@ const FullMatchStats = () => {
               <p>{CardsData.Team2Fouls}</p>
             </div>
           </div>
-          <div className="Stats1Data">
+          <div className="Stats1Data_Full">
             <p>Possession</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{CardsData.Team1Possession}%</p>
@@ -197,17 +201,19 @@ const FullMatchStats = () => {
             </div>
           </div>
         </div>
-        <div className="Stats2Data">
-          <p className="HeadToHeadHeading">Head To Head</p>
-          <div className="MatchesPlayed">
-            <p className="MtachesPlayedText">MatchesPlayed</p>
-            <p className="MatchesPlayedNumber">{PlayedMatches.MatchespLayed}</p>
+        <div className="Stats2Data_Full">
+          <p className="HeadToHeadHeading_Full">Head To Head</p>
+          <div className="MatchesPlayed_Full">
+            <p className="MtachesPlayedText_Full">MatchesPlayed</p>
+            <p className="MatchesPlayedNumber_Full">
+              {PlayedMatches.MatchespLayed}
+            </p>
           </div>
-          <div className="WinDrawBar">
-            <div className="Headings">
-              <p className="WinText">Win</p>
-              <p className="DrawText">Draw</p>
-              <p className="WinText2">Win</p>
+          <div className="WinDrawBar_Full">
+            <div className="Headings_Full">
+              <p className="WinText_Full">Win</p>
+              <p className="DrawText_Full">Draw</p>
+              <p className="WinText2_Full">Win</p>
             </div>
             <div class="progress">
               <div
@@ -237,14 +243,14 @@ const FullMatchStats = () => {
                 aria-valuemax="100"
               ></div>
             </div>
-            <div className="MatchesNumber">
-              <p className="WinNumber">{PlayedMatches.WonMatches}</p>
-              <p className="DrawNumber">{PlayedMatches.DrawMatches}</p>
-              <p className="WinNumber2">{PlayedMatches.Win2Matches}</p>
+            <div className="MatchesNumber_Full">
+              <p className="WinNumber_Full">{PlayedMatches.WonMatches}</p>
+              <p className="DrawNumber_Full">{PlayedMatches.DrawMatches}</p>
+              <p className="WinNumber2_Full">{PlayedMatches.Win2Matches}</p>
             </div>
           </div>
-          <div className="Stats2Bar">
-            <p className="goalRatioText">Goal Ratio</p>
+          <div className="Stats2Bar_Full">
+            <p className="goalRatioText_Full">Goal Ratio</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{PlayedMatches.Team1GoalRatio}</p>
               <div class="progress">
@@ -266,8 +272,8 @@ const FullMatchStats = () => {
               <p>{PlayedMatches.Team2GoalRatio}</p>
             </div>
           </div>
-          <div className="Stats2Bar">
-            <p className="goalsConcededText">Gaols Conceded</p>
+          <div className="Stats2Bar_Full">
+            <p className="goalsConcededText_Full">Gaols Conceded</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{PlayedMatches.Team1GoalConceded}</p>
               <div class="progress">
@@ -289,8 +295,8 @@ const FullMatchStats = () => {
               <p>{PlayedMatches.Team2GoalConceded}</p>
             </div>
           </div>
-          <div className="Stats2Bar">
-            <p className="possessionText">Possession</p>
+          <div className="Stats2Bar_Full">
+            <p className="possessionText_Full">Possession</p>
             <div style={{ display: "flex", alignItems: "center" }}>
               <p>{PlayedMatches.Team1Possession}%</p>
               <div class="progress">
@@ -313,9 +319,9 @@ const FullMatchStats = () => {
             </div>
           </div>
         </div>
-        <div className="PointsTable">
-          <p className="StandingsHeading">Standings</p>
-          <p className="LeagueName">England - Premier League</p>
+        <div className="PointsTable_Full">
+          <p className="StandingsHeading_Full">Standings</p>
+          <p className="LeagueName_Full">England - Premier League</p>
           <table>
             <thead>
               <tr>
@@ -372,37 +378,37 @@ const FullMatchStats = () => {
             </tbody>
           </table>
         </div>
-        <div className="Commentatory">
-          <p className="TimeLineHeading">Time Line</p>
-          <p className="TimeLineText">TimeLine</p>
+        <div className="Commentatory_Full">
+          <p className="TimeLineHeading_Full">Time Line</p>
+          <p className="TimeLineText_Full">TimeLine</p>
           <div style={{ display: "flex" }}>
-            <div className="Status">
+            <div className="Status_Full">
               <p>FT</p>
-              <hr className="line"></hr>
+              <hr className="line_Full"></hr>
             </div>
-            <div className="Text">
+            <div className="Text_Full">
               <p>Match ends, Lens 2, rennes 1.</p>
               <hr></hr>
             </div>
           </div>
           <div style={{ display: "flex" }}>
-            <div className="Status">
+            <div className="Status_Full">
               <p>90-5'</p>
-              <hr className="line"></hr>
+              <hr className="line_Full"></hr>
             </div>
-            <div className="Text">
+            <div className="Text_Full">
               <p>Second half ends, Lens 2, rennes 1.</p>
               <hr></hr>
             </div>
           </div>
           <div style={{ display: "flex" }}>
-            <div className="Status">
+            <div className="Status_Full">
               <p>90-5'</p>
-              <hr className="line"></hr>
+              <hr className="line_Full"></hr>
             </div>
-            <div className="Text">
+            <div className="Text_Full">
               <p>Lens</p>
-              <p className="Commentator">Wesley Said</p>
+              <p className="Commentator_Full">Wesley Said</p>
               <p>Foul by Wesley Said (Lens)</p>
               <hr></hr>
             </div>
