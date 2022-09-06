@@ -1,7 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import ETH from "../Assets/ethereum 3.png";
 import "./Dashboard.css";
 const Dashboard = () => {
+  const updatedCryptoCoin = useSelector(
+    (state) => state.dashboardReducer.value
+  );
   const Currency = ETH;
   const Data = [
     {
@@ -102,14 +106,14 @@ const Dashboard = () => {
                 <div className="TotalStakeHeading">Total Stake</div>
                 <div className="TotalStakeData">
                   <p className="Amount">{item.Stake}</p>
-                  <img className="Logo" src={Currency} alt="Ethereum"></img>
+                  {updatedCryptoCoin.cryptoCoin}
                 </div>
               </td>
               <td>
                 <div className="EstPayOutHeading">Est. Payout</div>
                 <div className="EstPayOutData">
                   <p className="Amount">{item.Payout}</p>
-                  <img className="Logo" src={Currency} alt="Ethereum"></img>
+                  {updatedCryptoCoin.cryptoCoin}
                 </div>
               </td>
             </tr>

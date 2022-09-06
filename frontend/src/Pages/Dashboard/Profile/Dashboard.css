@@ -13,6 +13,7 @@ p {
   border-bottom: 1px solid #b1b0b0;
 }
 .DashboardContainer {
+  width: 97%;
   margin: 1rem;
   background: linear-gradient(97.91deg, #393939 -51.8%, #141415 100%);
   border-radius: 24px;
@@ -159,14 +160,12 @@ p {
     flex-direction: row;
   }
 
-  .DashboardHeadings tr,
-  .Data tr {
+  tr {
     display: flex;
     flex-direction: column;
   }
 
-  .DashboardHeadings td,
-  .Data td {
+  td {
     display: flex;
     align-items: center;
     justify-content: space-between;

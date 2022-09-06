@@ -48,7 +48,7 @@ const SideBar = () => {
 
         <NavLink
           onClick={() => SetFlag(1)}
-          to="/profile"
+          to="/"
           style={({ isActive }) => (isActive ? activeStyle : inActiveStyle)}
         >
           <div

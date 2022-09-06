@@ -1,7 +1,9 @@
 p {
   margin: 0%;
 }
-
+.SideBarContainer {
+  height: 100vh;
+}
 .Back {
   display: flex;
   align-items: center;

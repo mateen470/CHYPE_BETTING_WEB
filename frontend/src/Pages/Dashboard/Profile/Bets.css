@@ -2,16 +2,13 @@ p {
   margin: 0%;
   width: fit-content;
 }
+.BetsContainer{
+  padding-top:5rem;
+}
 
 .DashboardBetsData td,
 .BetsHeadings td {
   height: 100px;
-}
-.dropDowns_bets {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 3rem;
-  gap: 0.5rem;
 }
 .plceholder_react_select_dashboard {
   display: flex;

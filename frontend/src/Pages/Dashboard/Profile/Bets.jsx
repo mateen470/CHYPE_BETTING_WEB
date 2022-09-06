@@ -1,9 +1,13 @@
 import React from "react";
 import ETH from "../Assets/ethereum 3.png";
-import BetsCryptoDropDown from "./BetsCryptoDropDown";
-import SettledOptionDropDown from "./BetsSettledOptionDropDown";
+import { useSelector } from "react-redux";
+import BetsCryptoDropDown from "../DropDownProfile/BetsCryptoDropDown";
+import SettledOptionDropDown from "../DropDownProfile/BetsSettledOptionDropDown";
 import "./Bets.css";
 const Bets = () => {
+  const updatedCryptoCoin = useSelector(
+    (state) => state.dashboardReducer.value
+  );
   const Currency = ETH;
   const Data = [
     {
@@ -42,10 +46,10 @@ const Bets = () => {
   ];
   return (
     <div className="BetsContainer">
-      <div className="dropDowns_bets">
+      {/* <div className="dropDowns_bets">
         <BetsCryptoDropDown />
         <SettledOptionDropDown />
-      </div>
+      </div> */}
       <table className="BetsTable">
         <thead className="BetsHeadings">
           <tr>
@@ -108,14 +112,14 @@ const Bets = () => {
                   <div className="TotalStakeHeading">Total Stake</div>
                   <div className="TotalStakeData">
                     <p className="Amount">{item.Stake}</p>
-                    <img className="Logo" src={Currency} alt="Ethereum"></img>
+                    {updatedCryptoCoin.cryptoCoin}
                   </div>
                 </td>
                 <td>
                   <div className="EstPayOutHeading">Est. Payout</div>
                   <div className="EstPayOutData">
                     <p className="Amount">{item.Payout}</p>
-                    <img className="Logo" src={Currency} alt="Ethereum"></img>
+                    {updatedCryptoCoin.cryptoCoin}
                   </div>
                 </td>
               </tr>

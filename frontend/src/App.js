@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage/LandingPage";
-// import ProfileDash from "./Pages/Dashboard/Profile/MainDashboard";
+import ProfileDash from "./Pages/Dashboard/Profile/MainDashboard";
 // import ProfileDashboard from "./Pages/Dashboard/Profile/Profile";
 // import FundingsMain from "./Pages/Dashboard/Profile/FundingsMain";
 // import Bets from "./Pages/Dashboard/Profile/Bets";
@@ -15,7 +15,9 @@ import LandingPage from "./Pages/LandingPage/LandingPage";
 function App() {
   return (
     <div className="App">
-      <LandingPage />
+      {/* <LandingPage /> */}
+      <ProfileDash />
+      {/* I DID THE DUMMY ROUTING OF DASHBOARD IN DashboardMain FILE IN DASHBOARD FOLDER OF PAGES */}
       {/* <Routes>
         <Route exact path="/" element={<LandingPage />}></Route>
         <Route path="/Dashboard" element={<ProfileDashboard />}></Route>
