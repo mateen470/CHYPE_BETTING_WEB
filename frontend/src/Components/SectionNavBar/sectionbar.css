@@ -1,7 +1,7 @@
 .navbar_main_div {
-  margin-top: 3.5rem;
-  margin-left: 11rem;
-  width: 38.13rem;
+  margin-top: 3.5vh;
+  margin-left: 12.5vw;
+  width: 50vw;
 }
 .navbar_ul {
   display: flex;
@@ -20,13 +20,14 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 0.9rem;
   line-height: 16px;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   height: 3rem;
   color: #ffffff;
   opacity: 0.7;
+  width: 10vw;
 }
 .carousel_sectionBar {
   display: none;

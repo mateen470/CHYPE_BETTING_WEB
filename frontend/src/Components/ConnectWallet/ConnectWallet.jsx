@@ -12,7 +12,7 @@ export default function Btn() {
     justify-content: center;
     align-items: center;
     width: 11vw;
-    height: 3rem;
+    height: 2.5rem;
     background: linear-gradient(96.51deg, #18bbfd -4.59%, #3769fe 100%);
     box-shadow: 0px 4px 15px rgba(88, 74, 255, 0.29);
     border-radius: 10px;
