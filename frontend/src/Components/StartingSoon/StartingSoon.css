@@ -1,8 +1,11 @@
+.StartSoon_root_div {
+  width: 70vw;
+}
 .StartingSoonContainer {
   margin-left: 0.5rem;
   margin-top: 3.5rem;
   margin-right: 1rem;
-  width: 60rem;
+  width: 65vw;
   margin-bottom: 3.5rem;
 }
 p {
@@ -15,6 +18,7 @@ p {
   flex-direction: column;
   border-bottom: 1px solid grey;
   margin-bottom: 2.5rem;
+  width: 62vw;
 }
 
 .MainMenu_StartingSoon {
@@ -26,8 +30,8 @@ p {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 16px;
+  font-size: 2vw;
+  line-height: 1vw;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   color: white;
@@ -48,6 +52,7 @@ p {
   border-top: 2px solid grey;
   display: flex;
   padding: 1rem;
+  width: 62vw;
 }
 
 .UpcomingText_StartingSoon {
@@ -55,8 +60,8 @@ p {
   margin: auto;
   font-family: "SF pro";
   font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 0.8vw;
   line-height: 16px;
   text-align: left;
   letter-spacing: 0.75px;
@@ -66,7 +71,7 @@ p {
 .TeamsName_StartingSoon {
   width: 50%;
   margin: auto;
-  gap: 1rem;
+  gap: 1.5vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +84,7 @@ p {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.2vw;
   line-height: 16px;
   text-align: justify;
   letter-spacing: 0.75px;
@@ -87,7 +92,7 @@ p {
   color: #ffffff;
 }
 
-.statsIcon_StartingSoon {
+/* .statsIcon_StartingSoon {
   height: 11px;
   width: 11px;
   position: relative;
@@ -99,7 +104,7 @@ p {
     rgba(37, 101, 203, 0.5) 100%
   );
   backdrop-filter: blur(100px);
-}
+} */
 
 .Predictions_StartingSoon {
   display: flex;
@@ -110,9 +115,9 @@ p {
 .Team1Prediction_StartingSoon,
 .Team2Prediction_StartingSoon,
 .DrawPrediction_StartingSoon {
-  width: 100%;
+  width: 100vw;
   margin: 0.5rem;
-  padding: 0.7rem;
+  padding: 1vw;
   text-align: left;
   background: linear-gradient(106.46deg, #2b2b2b -50.93%, #121113 97.2%);
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.35);
@@ -124,8 +129,8 @@ p {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 0.85vw;
+  line-height: 1vw;
   letter-spacing: 0.75px;
   text-transform: uppercase;
   color: #ffffff;
@@ -135,8 +140,8 @@ p {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1vw;
   text-align: left;
   letter-spacing: 0.75px;
   text-transform: uppercase;
@@ -148,8 +153,8 @@ p {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1vw;
   text-align: left;
   letter-spacing: 1.75px;
   text-transform: capitalize;
@@ -161,8 +166,8 @@ p {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 1vw;
+  line-height: 1vw;
   letter-spacing: 1.75px;
   text-transform: uppercase;
   background: linear-gradient(
