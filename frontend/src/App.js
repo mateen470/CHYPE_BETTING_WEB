@@ -15,8 +15,8 @@ import ProfileDash from "./Pages/Dashboard/Profile/MainDashboard";
 function App() {
   return (
     <div className="App">
-      {/* <LandingPage /> */}
-      <ProfileDash />
+      <LandingPage />
+      {/* <ProfileDash /> */}
       {/* I DID THE DUMMY ROUTING OF DASHBOARD IN DashboardMain FILE IN DASHBOARD FOLDER OF PAGES */}
       {/* <Routes>
         <Route exact path="/" element={<LandingPage />}></Route>
