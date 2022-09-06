@@ -1,9 +1,12 @@
 .Carousel_rootDiv {
   padding-top: 1rem;
-  padding-left: 7rem;
-  padding-right: 23rem;
-  height: 14rem;
-  width: 80rem;
+  /* padding-left: 7rem;
+  padding-right: 23rem; */
+  height: 18rem;
+  /* width: 80rem; */
+  width: 100vw;
+  padding-right: 33%;
+  padding-left: 1.5%;
 }
 
 .carousel_root_child {
@@ -14,13 +17,15 @@
 }
 .carousel_textPortion_root_div {
   display: inline-block;
-  padding: 1.5rem;
+  padding: 2%;
+  width: 70vw;
 }
 .carousel_textPortion_root_div h1 {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  /* font-size: 32px; */
+  font-size: auto;
   line-height: 38px;
   color: #ffffff;
   padding-bottom: 1rem;
@@ -29,17 +34,20 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: auto;
   color: #ffffff;
-  padding-bottom: 2rem;
+  padding-bottom: 3%;
 }
 .button_textPortion button {
   display: flex;
   align-items: center;
   text-align: center;
   border: none;
+  margin-left: -0.5rem;
   font-family: "SF pro";
   padding: 0.3rem 1rem;
+  /* padding: auto; */
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -55,12 +63,14 @@
 }
 .img_carousel img {
   display: inline-block;
-  height: 14rem;
+  /* height: 14rem; */
   padding: auto;
-  width: 25rem;
+  /* width: 25rem; */
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 45px;
   border-top-right-radius: 45px;
-  opacity: 0.5;
+  opacity: 0.4;
+  height: 15rem;
+  width: 30vw;
 }

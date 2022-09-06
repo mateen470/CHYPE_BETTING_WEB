@@ -123,7 +123,7 @@ const MyBets = () => {
                 <div className="EventHeading">
                   <p>Event</p>
                 </div>
-                <div className="TeamNames">
+                <div className="MyBets_TeamNames">
                   <p>{item.EventTeam1}</p>
                   <p className="dash">-</p>
                   <p>{item.EventTeam2}</p>

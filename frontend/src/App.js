@@ -16,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <LandingPage />
-      <Routes>
+      {/* <Routes>
         <Route exact path="/" element={<LandingPage />}></Route>
-        {/* <Route path="/Dashboard" element={<ProfileDashboard />}></Route>
+        <Route path="/Dashboard" element={<ProfileDashboard />}></Route>
         <Route path="/profile" element={<ProfileDash />}></Route>
         <Route path="/Fundings" element={<FundingsMain />}></Route>
         <Route path="/Bets" element={<Bets />}></Route>
@@ -26,9 +26,9 @@ function App() {
         <Route path="/" element={<LobbySection />}></Route>
         <Route path="/MyBets" element={<MyBets />}></Route>
         <Route path="/LiveEvents" element={<LiveEvents />}></Route>
-        <Route path="/StartingSoon" element={<StartingSoon />}></Route> */}
+        <Route path="/StartingSoon" element={<StartingSoon />}></Route>
         <Route path="/" element={<Navigate replace to="/" />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

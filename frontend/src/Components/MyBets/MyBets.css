@@ -28,7 +28,7 @@ p {
   color: #969696;
 }
 
-.TeamNames p,
+.MyBets_TeamNames p,
 .TeamsScores p,
 .SportsData,
 .TimeData {
@@ -67,7 +67,9 @@ p {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
+.MyBets_TeamNames {
+  margin-left: -6rem;
+}
 .OddsMain div {
   margin: auto;
   padding: 0.5rem;

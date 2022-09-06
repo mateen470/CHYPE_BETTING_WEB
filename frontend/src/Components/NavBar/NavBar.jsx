@@ -49,7 +49,7 @@ const NavBar = () => {
               <>
                 <NavLink to={"/"}>
                   <span onClick={togglePopup} className="topBar_signIn">
-                    Sign in
+                    SignIn
                   </span>
                 </NavLink>
                 <NavLink to={"/"}>

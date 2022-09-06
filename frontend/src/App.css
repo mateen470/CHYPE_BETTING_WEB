@@ -13,5 +13,16 @@
 .App {
   background-color: black;
   height: 100%;
+  /* width: max-content; */
   display: flex;
+}
+@media only screen and (min-height: 1260px) {
+  .App {
+    height: 150vh;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .App {
+    height: 150vh;
+  }
 }
