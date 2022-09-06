@@ -129,7 +129,9 @@ const Stats = () => {
                 </div>
               </div>
               <div onClick={() => SetFlag(!Flag)} className="FullDetailsText">
-                Full Details<img src={Arrow} className="fullDetail_Arrow"/>
+                <span>Full</span>
+                <span>Details</span>
+                <img src={Arrow} className="fullDetail_Arrow" />
               </div>
             </div>
             {view === 1 ? (
@@ -391,8 +393,8 @@ const Stats = () => {
                             {item.Last5.map((item1) => (
                               <div
                                 style={{
-                                  height: "1rem",
-                                  width: "1rem",
+                                  height: "0.48vw",
+                                  width: "0.48vw",
                                   backgroundColor:
                                     item1 === "lose"
                                       ? "red"

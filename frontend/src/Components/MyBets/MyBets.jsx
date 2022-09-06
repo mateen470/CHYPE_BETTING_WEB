@@ -123,10 +123,14 @@ const MyBets = () => {
                 <div className="EventHeading">
                   <p>Event</p>
                 </div>
-                <div className="MyBets_TeamNames">
-                  <p>{item.EventTeam1}</p>
+                <div className="MyBets_Team_Names">
+                  <p style={{ fontSize: "1.3vw", lineHeight: "1vw" }}>
+                    {item.EventTeam1}
+                  </p>
                   <p className="dash">-</p>
-                  <p>{item.EventTeam2}</p>
+                  <p style={{ fontSize: "1.3vw", lineHeight: "1vw" }}>
+                    {item.EventTeam2}
+                  </p>
                 </div>
               </td>
               <td className="OutcomeData">
