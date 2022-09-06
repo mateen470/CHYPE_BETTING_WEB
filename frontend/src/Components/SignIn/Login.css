@@ -1,16 +1,18 @@
 .SignIn_root_conatiner {
-  backdrop-filter: blur(2px);
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
   position: fixed;
   z-index: 3;
-  padding-left: 13rem;
-  padding-right: 25rem;
-  padding-bottom: 20rem;
+  padding-left: 13vw;
+  padding-right: 30vw;
+  padding-top: 2vw;
+  padding-bottom: 100vh;
 }
 .signIn_main_conatiner {
   background: linear-gradient(150.14deg, #202021 0%, #131214 101.02%);
-  width: 30rem;
+  width: 35vw;
   margin-top: 3rem;
-  height: 33rem;
   border-radius: 30px;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -25,7 +27,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -51,7 +53,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -65,14 +67,14 @@
   border-radius: 5rem;
   padding: 0.3rem;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.1vw;
   font-family: "SF pro";
 }
 .inputTag_with_Label_Login input::placeholder {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #575757;
@@ -86,7 +88,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -108,7 +110,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;
@@ -147,7 +149,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -164,7 +166,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.2vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;
@@ -179,7 +181,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;
@@ -200,7 +202,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;

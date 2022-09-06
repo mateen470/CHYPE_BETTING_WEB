@@ -25,7 +25,7 @@ const NetworkDropDownDeposit = () => {
       background: "linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%)",
       borderRadius: "30px",
       display: "flex",
-      width: "6.5rem",
+      width: "8vw",
     }),
     indicatorSeparator: () => ({
       display: "none",

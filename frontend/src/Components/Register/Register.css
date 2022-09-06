@@ -1,15 +1,16 @@
 .Regitser_root_div {
   position: fixed;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
   z-index: 3;
-  padding-left: 13rem;
-  padding-right: 25rem;
-  padding-top: 0.2rem;
+  padding-left: 13vw;
+  padding-right: 30vw;
+  padding-top: 2vw;
+  padding-bottom: 100vh;
   color: aliceblue;
 }
 .Register_Main_container {
   display: inline-block;
-  width: 30rem;
+  width: 35vw;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.3rem;
@@ -25,7 +26,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 2vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -51,7 +52,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -65,14 +66,14 @@
   border-radius: 5rem;
   padding: 0.3rem;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.1vw;
   font-family: "SF pro";
 }
 .inputTag_with_Label input::placeholder {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #575757;
@@ -89,7 +90,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.1vw;
   text-indent: 5px;
   color: #ffffff;
 }
@@ -110,7 +111,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;
@@ -149,7 +150,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 1vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -166,7 +167,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.2vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;
@@ -181,7 +182,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;

@@ -159,12 +159,14 @@ p {
     flex-direction: row;
   }
 
-  tr {
+  .DashboardHeadings tr,
+  .Data tr {
     display: flex;
     flex-direction: column;
   }
 
-  td {
+  .DashboardHeadings td,
+  .Data td {
     display: flex;
     align-items: center;
     justify-content: space-between;

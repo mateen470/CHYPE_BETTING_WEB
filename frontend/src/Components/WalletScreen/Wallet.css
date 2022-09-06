@@ -1,21 +1,21 @@
 .root_div_wallet {
   justify-content: center;
   align-items: center;
-  margin-right: 27rem;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+  padding-left: 30vw;
+  padding-right: 100vw;
   margin-top: -1rem;
-  padding-right: 30rem;
-  padding-left: 15rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding-top: 3vw;
+  padding-bottom: 100vh;
 }
 .main_div_wallet {
-  width: 30rem;
+  width: 40vw;
   height: auto;
   background: #1e1e1e;
   border-radius: 30px;
   padding-left: 2rem;
   padding-right: 2rem;
+  margin-left: 15vw;
 }
 .walletH1_crossSign {
   display: flex;
@@ -27,7 +27,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 2vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -59,13 +59,14 @@
   border: none;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.4vw;
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.75px;
   text-transform: capitalize;
   color: #ffffff;
   cursor: pointer;
+  padding-bottom: 0.5vw;
 }
 .navigationOfWallet button:hover {
   border-bottom: 3px solid #356dfe;
@@ -79,7 +80,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -90,7 +91,7 @@
   border-radius: 30px;
   padding: 0.5rem;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.3vw;
   font-family: "SF pro";
 }
 .address_of_crypto input:focus {
@@ -100,7 +101,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-indent: 5px;
   color: #575757;
@@ -113,7 +114,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   color: #979797;
 }
@@ -129,13 +130,13 @@
 .withdraw_btn button {
   background: linear-gradient(90.45deg, #1cb1fd 0%, #3373fe 100%);
   border-radius: 32px;
-  padding: 0.2rem 11rem;
+  padding: 0.2rem 15vw;
   border: none;
   cursor: pointer;
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-align: center;
   text-indent: 5px;
@@ -151,36 +152,37 @@
   align-items: center;
   gap: 0.2rem;
   font-family: "SF pro";
-  font-size: 13px;
+  font-size: 1.1vw;
   color: #ffffff;
 }
 .react_selct_option_root_div img {
   height: 1.2rem;
   width: 1.2rem;
 }
+
 .plceholder_react_select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.2vw;
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1vw;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
 }
 .plceholder_react_select img {
-  height: 1.2rem;
-  width: 1.2rem;
+  height: 1vw;
+  width: 1vw;
 }
 .dropDown_wallet_root_div {
   display: flex;
   padding: 2.5rem;
   align-items: center;
-  margin-left: 6.5rem;
-  gap: 1rem;
+  margin-left: 8vw;
+  gap: 1vw;
 }
 .dropDown_wallet_root_div label {
   display: inline-block;
@@ -188,7 +190,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.2vw;
   line-height: 150%;
   text-indent: 5px;
   color: #5f5f5f;
@@ -201,7 +203,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -230,7 +232,7 @@
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8vw;
   line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
@@ -257,7 +259,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-indent: 5px;
   color: #ffffff;
@@ -271,19 +273,18 @@ input[type="number"]::-webkit-inner-spin-button {
   background: none;
   border: 1px solid #575757;
   border-radius: 30px;
-  padding: 0.5rem;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.3vw;
   font-family: "SF pro";
   padding: 0.5rem;
   margin-bottom: 2rem;
-  width: 25.5rem;
+  width: 40vw;
 }
 .btc_deposit_address_input input {
   background: none;
   border: none;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 1.3vw;
   font-family: "SF pro";
 }
 .btc_deposit_address_input input:focus {
@@ -293,7 +294,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-indent: 5px;
   color: #575757;
@@ -308,11 +309,11 @@ input[type="number"]::-webkit-inner-spin-button {
   background: none;
   border: none;
   cursor: pointer;
-  margin: 0.3rem;
+  margin: 0.5vw;
 }
 .btns_inside_btc_deposit_address_input button img {
-  height: 1rem;
-  width: 1rem;
+  height: 1.1vw;
+  width: 1.2vw;
 }
 .QR_code_root_div {
   display: flex;
@@ -324,7 +325,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-family: "SF pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.3vw;
   line-height: 150%;
   text-align: center;
   color: #979797;

@@ -15,9 +15,9 @@ const CryptoDropDownDeposit = () => {
             ETH
             <img
               style={{
-                padding: "0rem 0.3rem",
-                height: "1.5rem",
-                width: "2rem",
+                // padding: "0rem 0.3rem",
+                height: "1.5vw",
+                width: "2vw",
               }}
               src={Eth}
             />
@@ -34,8 +34,8 @@ const CryptoDropDownDeposit = () => {
             BTC
             <img
               style={{
-                height: "1.5rem",
-                width: "2rem",
+                height: "1.5vw",
+                width: "2vw",
                 padding: "0rem 0.2rem",
                 background: "none",
                 borderRadius: "50%",
@@ -89,7 +89,7 @@ const CryptoDropDownDeposit = () => {
       background: "linear-gradient(90.62deg, #212121 1.53%, #141315 120.08%)",
       borderRadius: "30px",
       display: "flex",
-      width: "8rem",
+      width: "11vw",
     }),
     indicatorSeparator: () => ({
       display: "none",
@@ -105,7 +105,8 @@ const CryptoDropDownDeposit = () => {
       <Select
         placeholder={
           <div className="plceholder_react_select">
-            0.0000 <img style={{ height: "1rem", width: "1rem" }} src={Eth} />
+            0.0000
+            <img style={{ height: "1.3vw", width: "1.3vw" }} src={Eth} />
           </div>
         }
         onChange={onChangeDepositCurrency}

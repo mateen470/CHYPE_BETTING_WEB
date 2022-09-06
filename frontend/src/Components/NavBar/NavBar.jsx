@@ -61,7 +61,7 @@ const NavBar = () => {
             )}
             <div
               className="connect_wallet_btn"
-              style={{ marginLeft: logincurrentStatus.login ? "13rem" : "" }}
+              // style={{ marginLeft: logincurrentStatus.login ? "" : "" }}
             >
               <Btn />
             </div>
